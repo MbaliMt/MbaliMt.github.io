@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Mbali Mtimkulu</title>
-</head>
-<style>
-body{
-    background-image: url("https://media.timeout.com/images/105446203/1372/772/image.jpg");
-    opacity: 0.5;
-}
-#navbar{
-    width: 100%;
-    background-color: black;
-    position: fixed;
-}
+  <head>
+    <title>Mbali Mtimkulu</title>
+  </head>
+  <style>
+    body {
+      background-image: url('https://media.timeout.com/images/105446203/1372/772/image.jpg');
+      --bg-overlay-color: transparent;
+    }
+    .bg {
+    }
 
-</style>
-<body>
+    #navbar {
+      width: 100%;
+      background-color: black;
+      position: fixed;
+      opacity: 0.5;
+      height: 80px;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline;
+    }
+    .aboutMe {
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      float: right;
+      position: relative;
+      right: 180px;
+      bottom: -50px;
+      font-family: Arial, Helvetica, sans-serif
+      
+    }
+    .skills {
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      float: right;
+      position: relative;
+      right: 210px;
+      bottom: -50px;
+    }
+    .projects {
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      float: right;
+      position: relative;
+      right: 240px;
+      bottom: -50px;
+    }
+    .contact {
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      float: right;
+      position: relative;
+      right: 270px;
+      bottom: -45px;
+    }
+  </style>
+  <body>
+    <div class="bg"></div>
     <nav id="navbar">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-</body>
-
+      <ul>
+        <li><a href="AboutMe.html" class="aboutMe">About me</a></li>
+        <li><a href="Skills.html" class="skills">Skills</a></li>
+        <li><a href="Projects.html" class="projects">Projects</a></li>
+        <li><a href="Contact.html" class="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
 </html>
