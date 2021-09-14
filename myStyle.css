@@ -87,3 +87,17 @@ body #about {
   padding-bottom: 5px;
   color: #0066b2;
 }
+#fcf-form .fcf-form-control {
+  background-color: #333;
+  width: 50%;
+  height: 40px;
+}
+
+#Message {
+  height: 100px;
+}
+.fcf-body {
+  position: relative;
+  right: -700px;
+  top: -200px;
+}
