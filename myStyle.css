@@ -12,11 +12,18 @@ body {
   align-self: center;
   justify-content: center;
 }
-ul :hover::after {
-  content: "";
-  display: block;
-  width: 70%;
-  border-bottom: 3px solid;
+#navbar a {
+  text-decoration: none;
+}
+
+#navbar a:visited {
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: #a48111;
+  text-decoration-thickness: 4px;
 }
 ul {
   display: flex;
@@ -113,6 +120,6 @@ body #about {
   position: relative;
   top: 30px;
 }
-.fcf-body{
+.fcf-body {
   color: white;
 }
