@@ -2,104 +2,34 @@
 <html>
   <head>
     <title>Mbali Mtimkulu</title>
+    <link href="myStyle.css" rel="stylesheet" type="text/css" />
   </head>
-  <style>
-    #myImg {
-      float: left;
-    }
-    body {
-      /* background-image: url("https://hips.hearstapps.com/clv.h-cdn.co/assets/17/21/1495817270-1434385708-idea-notebook-paint-colors-0914-slide-1.jpg"); */
-      /* background-image: url('https://media.timeout.com/images/105446203/1372/772/image.jpg'); */
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLP-2Zeu1uGxc4Wr21fd_qhgjZy8EWsQ1UAA&usqp=CAU");
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynoJyd0brECrcZmwexseQmnfpBNRJoXmIlg&usqp=CAU");
-      background-color: #143d59;
-      /* -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover; */
-      margin: auto;
-      background-repeat: no-repeat;
-      background-size: 50% 100%;
-    }
-
-    #navbar {
-      width: 100%;
-      background-color: #f4b41a;
-      position: fixed;
-      /* opacity: 0.5; */
-      height: 110px;
-    }
-    #navbar :hover {
-      background-color: #ddd;
-      color: black;
-      margin-left: 20px;
-    }
-
-    ul {
-      list-style-type: none;
-      /* margin: 0;
-      padding: 0; */
-    }
-    li {
-      display: inline;
-    }
-    .aboutMe {
-      color: white;
-      text-decoration: none;
-      font-size: 30px;
-      float: right;
-      position: relative;
-      right: 180px;
-      bottom: -50px;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .skills {
-      color: #999999;
-      text-decoration: none;
-      font-size: 30px;
-      float: right;
-      position: relative;
-      right: 210px;
-      bottom: -50px;
-    }
-    .projects {
-      color: #999999;
-      text-decoration: none;
-      font-size: 30px;
-      float: right;
-      position: relative;
-      right: 240px;
-      bottom: -50px;
-    }
-    .contact {
-      color: #999999;
-      text-decoration: none;
-      font-size: 30px;
-      float: right;
-      position: relative;
-      right: 270px;
-      bottom: -45px;
-    }
-    .mybody {
-    }
-  </style>
   <body>
-    <div class="mybody">
-      <div class="bg"></div>
-      <nav id="navbar">
+    <nav id="navbar">
+      <ul>
         <ul>
-          <li><a href="AboutMe.html" class="aboutMe">About me</a></li>
-          <li><a href="Skills.html" class="skills">Skills</a></li>
-          <li><a href="Projects.html" class="projects">Projects</a></li>
-          <li><a href="Contact.html" class="contact">Contact</a></li>
+          <a href="Home.html" class="home">Home</a>
         </ul>
-      </nav>
+        <ul>
+          <a href="AboutMe.html" class="aboutMe">About me</a>
+        </ul>
+        <ul>
+          <a href="Skills.html" class="skills">Skills</a>
+        </ul>
+        <ul>
+          <a href="Projects.html" class="projects">Projects</a>
+        </ul>
+        <ul>
+          <a href="Contact.html" class="contact">Contact</a>
+        </ul>
+      </ul>
+    </nav>
+    <div class="homeText">
+      <p id="hi">Hello, I'm</p>
+      <p id="name">Mbali Mtimkulu</p>
+      <p id="occupation">Aspiring Web Developer</p>
     </div>
-    <img
-      src="MyImg.jpg"
-      alt="My picture"
-      width="780"
-      height="795"
-      class="myImg"
-    />
+
+    <button type="button" class="button">MORE ABOUT ME </button>
   </body>
 </html>
