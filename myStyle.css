@@ -75,14 +75,13 @@ body #about {
 .contact {
   text-align: left;
   color: white;
+  padding-left: 20px;
 }
 .inTouch {
   text-align: center;
   font-size: 50px;
 }
-.contact {
-  padding-left: 20px;
-}
+
 #headings {
   padding-bottom: 5px;
   color: #0066b2;
@@ -100,4 +99,20 @@ body #about {
   position: relative;
   right: -700px;
   top: -200px;
+}
+.fcf-form-group #fcf-button {
+  height: 50px;
+  background-color: #a48111;
+  border-radius: 5px;
+}
+.fcf-form-control {
+  height: 100px;
+}
+.subContact {
+  position: relative;
+  position: relative;
+  top: 30px;
+}
+.fcf-body{
+  color: white;
 }
