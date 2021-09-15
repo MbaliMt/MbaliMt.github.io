@@ -88,9 +88,15 @@ body #about {
   text-align: center;
   font-size: 50px;
 }
+.fcf-form-group {
+  font-size: 20px;
+}
+.fcf-input-group {
+  padding-bottom: 10px;
+}
 
-#headings {
-  padding-bottom: 5px;
+.contact #headings {
+  padding-bottom: 10px;
   color: #0066b2;
 }
 #fcf-form .fcf-form-control {
@@ -110,10 +116,11 @@ body #about {
 .fcf-form-group #fcf-button {
   height: 50px;
   background-color: #a48111;
-  border-radius: 5px;
+  border-radius: 20px;
+  width: 200px;
 }
 .fcf-form-control {
-  height: 100px;
+  height: 80px;
 }
 .subContact {
   position: relative;
@@ -122,4 +129,40 @@ body #about {
 }
 .fcf-body {
   color: white;
+}
+.fcf-input-group #Message {
+  height: 200px;
+}
+#facebookImage {
+  position: relative;
+  bottom: 280px;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  margin: 7px;
+}
+
+#twitterImage {
+  position: relative;
+  bottom: 280px;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  margin: 7px;
+}
+#LinkedInIcon {
+  position: relative;
+  bottom: 280px;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  margin: 7px;
+}
+#gitIcon {
+  position: relative;
+  bottom: 280px;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  margin: 7px;
 }
