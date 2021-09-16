@@ -79,6 +79,7 @@ body #about {
 /* End of About me */
 
 /* Start contact */
+
 .contact {
   text-align: left;
   color: white;
@@ -99,6 +100,7 @@ body #about {
   padding-bottom: 10px;
   color: #0066b2;
 }
+
 #fcf-form .fcf-form-control {
   background-color: #333;
   width: 50%;
@@ -125,7 +127,12 @@ body #about {
 .subContact {
   position: relative;
   position: relative;
-  top: 30px;
+  top: 90px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#headings{
+  
 }
 .fcf-body {
   color: white;
@@ -166,3 +173,21 @@ body #about {
   width: 80px;
   margin: 7px;
 }
+.socialMediaIcons {
+  position: relative;
+  bottom: -130px;
+  left: -690px;
+}
+/* End contact */
+/* Start About me */
+#myImage {
+  height: 500px;
+  width: 500px;
+  float: left;
+  position: relative;
+  bottom: -100px;
+  right: -200px;
+  border-radius: 10px;
+}
+
+/* End about me */
