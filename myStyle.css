@@ -80,10 +80,12 @@ body #about {
 
 /* Start contact */
 
-.contact {
+.contacts {
   text-align: left;
   color: white;
   padding-left: 20px;
+  position: relative;
+  top: 45px;
 }
 .inTouch {
   text-align: center;
@@ -95,18 +97,23 @@ body #about {
 .fcf-input-group {
   padding-bottom: 10px;
 }
-
-.contact #headings {
-  padding-bottom: 10px;
+.fcf-form {
+  padding-bottom: 20px;
+}
+.contacts #headings {
   color: #0066b2;
 }
-
+a .headings {
+  padding-bottom: 20px;
+}
 #fcf-form .fcf-form-control {
   background-color: #333;
   width: 50%;
   height: 40px;
 }
-
+.fcf-body {
+  margin-bottom: 0px;
+}
 #Message {
   height: 100px;
 }
@@ -125,14 +132,11 @@ body #about {
   height: 80px;
 }
 .subContact {
-  position: relative;
-  position: relative;
-  top: 90px;
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-#headings{
-  
+.subContact .headings {
+  background-color: aqua;
 }
 .fcf-body {
   color: white;
@@ -175,7 +179,7 @@ body #about {
 }
 .socialMediaIcons {
   position: relative;
-  bottom: -130px;
+  bottom: -110px;
   left: -690px;
 }
 /* End contact */
@@ -191,3 +195,28 @@ body #about {
 }
 
 /* End about me */
+
+/* Start skills page */
+.skillsImages {
+  width: 700px;
+    height: 650px;
+    display: inline-block;
+}
+#htmlIcon {
+  height: 210px;
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#cssIcon {
+  height: 200px;
+  width: 200px;
+}
+#jsIcon {
+  height: 195px;
+  width: 205px;
+}
+#pythonIcon {
+  height: 200px;
+  width: 290px;
+}
