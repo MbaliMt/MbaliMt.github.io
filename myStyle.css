@@ -2,6 +2,10 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.788)),
     url("https://wallup.net/wp-content/uploads/2017/11/23/430250-technology-laptop-keyboards-748x421.jpg");
   background-size: cover;
+  padding-bottom: 0%;
+}
+main {
+  padding-bottom: auto;
 }
 #navbar ul a {
   text-decoration: none;
@@ -24,6 +28,7 @@ body {
   text-decoration: underline;
   text-decoration-color: #a48111;
   text-decoration-thickness: 4px;
+  text-underline-position: under;
 }
 ul {
   display: flex;
@@ -77,24 +82,26 @@ ul {
 /* End of About me */
 
 /* Start contact */
-#contact {
-  font-size: 30px;
+.contactDiv {
+  font-size: 25px;
+  color: white;
   text-align: center;
-}
-.contacts{
-  text-align: center;
+  position: relative;
+  bottom: -120px;
 }
 
 .contacts {
   text-align: left;
-  color: white;
+  text-align: center;
   padding-left: 20px;
   position: relative;
   top: 45px;
 }
 
-.contacts #headings {
-  color: #0066b2;
+.contactDiv .headings {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  color: #a48111;
 }
 a .headings {
   padding-bottom: 20px;
@@ -170,25 +177,25 @@ a .headings {
   height: 210px;
   width: 220px;
   position: relative;
-  bottom: -206px;
+  bottom: -246px;
 }
 #cssIcon {
   height: 200px;
   width: 200px;
   position: relative;
-  bottom: -200px;
+  bottom: -240px;
 }
 #jsIcon {
   height: 195px;
   width: 205px;
   position: relative;
-  bottom: -198px;
+  bottom: -238px;
 }
 #pythonIcon {
   height: 200px;
   width: 200px;
   position: relative;
-  bottom: -200px;
+  bottom: -240px;
 }
 .skillsImages {
   position: relative;
