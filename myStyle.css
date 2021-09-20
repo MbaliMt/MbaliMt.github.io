@@ -73,12 +73,17 @@ ul {
 /* End of Home Style */
 
 /* From About me */
-body #about {
-  background-color: black;
-}
+
 /* End of About me */
 
 /* Start contact */
+#contact {
+  font-size: 30px;
+  text-align: center;
+}
+.contacts{
+  text-align: center;
+}
 
 .contacts {
   text-align: left;
@@ -87,50 +92,14 @@ body #about {
   position: relative;
   top: 45px;
 }
-.inTouch {
-  text-align: center;
-  font-size: 50px;
-}
-.fcf-form-group {
-  font-size: 20px;
-}
-.fcf-input-group {
-  padding-bottom: 10px;
-}
-.fcf-form {
-  padding-bottom: 20px;
-}
+
 .contacts #headings {
   color: #0066b2;
 }
 a .headings {
   padding-bottom: 20px;
 }
-#fcf-form .fcf-form-control {
-  background-color: #333;
-  width: 50%;
-  height: 40px;
-}
-.fcf-body {
-  margin-bottom: 0px;
-}
-#Message {
-  height: 100px;
-}
-.fcf-body {
-  position: relative;
-  right: -700px;
-  top: -200px;
-}
-.fcf-form-group #fcf-button {
-  height: 50px;
-  background-color: #a48111;
-  border-radius: 20px;
-  width: 200px;
-}
-.fcf-form-control {
-  height: 80px;
-}
+
 .subContact {
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -138,15 +107,17 @@ a .headings {
 .subContact .headings {
   background-color: aqua;
 }
-.fcf-body {
-  color: white;
+.socialMediaIcons {
+  position: relative;
+  bottom: -450px;
+  right: -570px;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
 }
-.fcf-input-group #Message {
-  height: 200px;
-}
+
 #facebookImage {
   position: relative;
-  bottom: 280px;
+  top: -280px;
   border-radius: 10px;
   height: 80px;
   width: 80px;
@@ -177,12 +148,9 @@ a .headings {
   width: 80px;
   margin: 7px;
 }
-.socialMediaIcons {
-  position: relative;
-  bottom: -110px;
-  left: -690px;
-}
+
 /* End contact */
+
 /* Start About me */
 #myImage {
   height: 500px;
@@ -197,26 +165,32 @@ a .headings {
 /* End about me */
 
 /* Start skills page */
-.skillsImages {
-  width: 700px;
-    height: 650px;
-    display: inline-block;
-}
+
 #htmlIcon {
   height: 210px;
   width: 220px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  bottom: -206px;
 }
 #cssIcon {
   height: 200px;
   width: 200px;
+  position: relative;
+  bottom: -200px;
 }
 #jsIcon {
   height: 195px;
   width: 205px;
+  position: relative;
+  bottom: -198px;
 }
 #pythonIcon {
   height: 200px;
-  width: 290px;
+  width: 200px;
+  position: relative;
+  bottom: -200px;
+}
+.skillsImages {
+  position: relative;
+  right: -330px;
 }
