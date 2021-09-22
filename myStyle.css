@@ -1,8 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.788)),
     url("https://wallup.net/wp-content/uploads/2017/11/23/430250-technology-laptop-keyboards-748x421.jpg");
   background-size: cover;
-  overflow-x: hidden;
+}
+.hamMenu {
+  width: 50px;
+  margin-bottom: 170px;
+  display: none;
 }
 #navbar ul a {
   text-decoration: none;
@@ -12,6 +20,10 @@ body {
   display: flex;
   align-self: center;
   justify-content: center;
+}
+#navbar ul li {
+  list-style-type: none;
+  margin-right: 15px;
 }
 #navbar a {
   text-decoration: none;
@@ -29,47 +41,40 @@ body {
 }
 ul {
   display: flex;
-  align-items: center;
-  position: relative;
-  left: 220px;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 300px;
 }
+
 .homeText {
   text-align: center;
-  position: relative;
   color: white;
-  bottom: -300px;
 }
-#hi {
+
+p {
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 50px;
-  line-height: 0px;
 }
-#name {
+h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 70px;
-  line-height: 0px;
   font-weight: bold;
 }
-#occupation {
+h2 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  line-height: 0px;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 40px;
 }
-.button {
-  align-items: center;
+#indexButton {
   border: none;
   color: white;
   background-color: #a48111;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
-  position: relative;
-  bottom: -300px;
-  right: -660px;
   border-radius: 5px;
 }
 /* End of Home Style */
@@ -79,16 +84,12 @@ ul {
   font-size: 25px;
   color: white;
   text-align: center;
-  position: relative;
-  bottom: -120px;
 }
 
 .contacts {
   text-align: left;
   text-align: center;
   padding-left: 20px;
-  position: relative;
-  top: 45px;
 }
 
 .contactDiv .headings {
@@ -108,16 +109,11 @@ a .headings {
   background-color: aqua;
 }
 .socialMediaIcons {
-  position: relative;
-  bottom: -450px;
-  right: -570px;
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
 
 #facebookImage {
-  position: relative;
-  top: -280px;
   border-radius: 10px;
   height: 80px;
   width: 80px;
@@ -125,24 +121,18 @@ a .headings {
 }
 
 #twitterImage {
-  position: relative;
-  bottom: 280px;
   border-radius: 10px;
   height: 80px;
   width: 80px;
   margin: 7px;
 }
 #LinkedInIcon {
-  position: relative;
-  bottom: 280px;
   border-radius: 10px;
   height: 80px;
   width: 80px;
   margin: 7px;
 }
 #gitIcon {
-  position: relative;
-  bottom: 280px;
   border-radius: 10px;
   height: 80px;
   width: 80px;
@@ -156,8 +146,6 @@ a .headings {
   height: 500px;
   width: 500px;
   float: left;
-  position: relative;
-  bottom: -100px;
   right: -200px;
   border-radius: 10px;
 }
@@ -173,9 +161,6 @@ a .headings {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  position: relative;
-  bottom: 642px;
-  right: -990px;
   border-radius: 5px;
 }
 #indexButton {
@@ -187,8 +172,6 @@ section .sectionP {
   font-size: 20px;
   float: right;
   padding-right: 35px;
-  position: relative;
-  bottom: -180px;
 }
 
 /* End about me */
@@ -198,30 +181,20 @@ section .sectionP {
 #htmlIcon {
   height: 210px;
   width: 220px;
-  position: relative;
-  bottom: -246px;
 }
 #cssIcon {
   height: 200px;
   width: 200px;
-  position: relative;
-  bottom: -240px;
 }
 #jsIcon {
   height: 195px;
   width: 205px;
-  position: relative;
-  bottom: -238px;
 }
 #pythonIcon {
   height: 200px;
   width: 200px;
-  position: relative;
-  bottom: -240px;
 }
 .skillsImages {
-  position: relative;
-  right: -330px;
 }
 /* Device 800px*/
 
@@ -255,6 +228,45 @@ section {
   text-decoration-color: #a48111;
   text-decoration-thickness: 4px;
   text-underline-position: under;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 35px;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  ul {
+    margin-bottom: 170px;
+    display: none;
+  }
+  #indexButton {
+    padding: 10px 22px;
+    font-size: 10px;
+  }
+  .hamMenu {
+    display: grid;
+  }
 }
 
 /* @media screen and (max-width: 414px) {
