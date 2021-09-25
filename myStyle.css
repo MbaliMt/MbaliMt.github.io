@@ -21,10 +21,11 @@ body {
   text-decoration: none;
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   align-self: center;
   justify-content: center;
+  margin-left: 27px;
 }
 #navbar ul li {
   list-style-type: none;
@@ -222,7 +223,31 @@ a .headings {
 /* End about me */
 
 /* Start skills page */
-
+.SkillsText p {
+  font-size: 40px;
+  display: inline-block;
+  margin-top: 220px;
+  margin-bottom: 20px;
+  color: white;
+  margin-right: 30px;
+  margin-left: 60px;
+  font-family: "Times New Roman", Times, serif;
+}
+#cssId {
+  margin-left: 80px;
+  margin-right: 20px;
+}
+#pythonId {
+  margin-left: 50px;
+  margin-right: 0px;
+}
+#jsId {
+  margin-left: 30px;
+  margin-right: 0px;
+}
+#gitId {
+  margin-left: 40px;
+}
 #htmlIcon {
   height: 210px;
   width: 220px;
@@ -240,17 +265,13 @@ a .headings {
   width: 200px;
 }
 .skillsIcon {
-  display: flex;
+  display: grid;
   justify-content: center;
-  margin-top: 250px;
 }
 #gitHIcon {
   height: 195px;
   width: 200px;
 }
-/* #htmlText {
-  margin-bottom: 100px;
-} */
 
 #navbar1 ul a {
   text-decoration: none;
