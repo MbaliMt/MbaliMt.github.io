@@ -6,11 +6,16 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.788)),
     url("https://wallup.net/wp-content/uploads/2017/11/23/430250-technology-laptop-keyboards-748x421.jpg");
   background-size: cover;
+  overflow: hidden;
 }
 .hamMenu {
   width: 50px;
   margin-bottom: 170px;
   display: none;
+}
+#navbar {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 #navbar ul a {
   text-decoration: none;
@@ -49,8 +54,10 @@ ul {
 .homeText {
   text-align: center;
   color: white;
+  margin-top: 250px;
 }
-
+.infoText {
+}
 p {
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 50px;
@@ -83,7 +90,9 @@ h2 {
 .contactDiv {
   font-size: 25px;
   color: white;
+  display: block;
   text-align: center;
+  margin-top: 100px;
 }
 
 .contacts {
@@ -111,6 +120,9 @@ a .headings {
 .socialMediaIcons {
   margin-bottom: 0%;
   padding-bottom: 0%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 #facebookImage {
@@ -138,40 +150,55 @@ a .headings {
   width: 80px;
   margin: 7px;
 }
+.ulIndex {
+  margin-bottom: auto;
+}
 
 /* End contact */
 
 /* Start About me */
+
+.ImageDiv {
+  margin-top: 150px;
+}
+.AboutMeSection p {
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
 #myImage {
+  display: flex;
   height: 500px;
   width: 500px;
   float: left;
-  right: -200px;
-  border-radius: 10px;
+  display: block;
+  margin-left: 50px;
+  margin-bottom: 200px;
+  margin-right: 50px;
 }
 .buttonCV {
-  align-items: center;
   border: none;
   color: white;
   background-color: #a48111;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
-}
+  }
 #indexButton {
   text-decoration: none;
   color: white;
 }
-section .sectionP {
+.sectionP {
   color: white;
   font-size: 20px;
   float: right;
   padding-right: 35px;
+  margin-top: auto !important;
 }
 
 /* End about me */
@@ -194,17 +221,18 @@ section .sectionP {
   height: 200px;
   width: 200px;
 }
-.skillsImages {
+.skillsIcon {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
 }
-/* Device 800px*/
-
-section {
-  height: 150vh;
+#gitHIcon {
+  height: 195px;
+  width: 200px;
 }
-/*device 1*/
-#navbar1 {
-  text-align: center;
-}
+/* #htmlText {
+  margin-bottom: 100px;
+} */
 
 #navbar1 ul a {
   text-decoration: none;
@@ -231,20 +259,32 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  /*Home page*/
+  body {
+    background-repeat: no-repeat;
+  }
+  #navbar ul a {
+    font-size: 30px;
+  }
   p {
-    font-size: 35px;
+    font-size: 50px;
   }
   h1 {
-    font-size: 50px;
+    font-size: 65px;
     font-weight: bold;
   }
   h2 {
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     margin-bottom: 40px;
   }
 }
+/*About me*/
+
 @media screen and (max-width: 320px) {
+  body {
+    background-size: 100vh;
+  }
   p {
     font-size: 20px;
   }
@@ -268,211 +308,3 @@ section {
     display: grid;
   }
 }
-
-/* @media screen and (max-width: 414px) {
-  Css for Iphone 6
-  index page
-  * {
-  margin: 0;
-  padding: 0;
-} 
-  body {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.781),
-        rgba(0, 0, 0, 0.788)
-      ),
-      url("https://wallup.net/wp-content/uploads/2017/11/23/430250-technology-laptop-keyboards-748x421.jpg");
-    background-size: cover;
-    height: 100vh;
-  }
-  .wrapper {
-    width: 100%;
-  }
-  .homeText {
-    width: 100%;
-  }
-  .homeText {
-    color: white;
-  }
-  .homeText #hi {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 140px;
-    line-height: 44px;
-    padding: 30px 30px 20px;
-    position: relative;
-    bottom: -1150px;
-    text-align: center;
-  }
-  .homeText #name {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 180px;
-    line-height: 100%;
-    font-weight: bold;
-    position: relative;
-    bottom: -1220px;
-    text-align: center;
-  }
-  .homeText #occupation {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 100px;
-    line-height: 0px;
-    position: relative;
-    bottom: -1300px;
-    text-align: center;
-  }
-  .button {
-    align-items: center;
-    border: none;
-    color: white;
-    background-color: #a48111;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 50px;
-    margin: 4px 2px;
-    cursor: pointer;
-    position: relative;
-    bottom: -300px;
-    right: -590px;
-    border-radius: 5px;
-    bottom: -1450px;
-  }
-  end of index style
-  start contact style
-  .contactDiv {
-    font-size: 70px;
-    color: white;
-    text-align: center;
-    position: relative;
-    bottom: -620px;
-    right: -120px;
-  }
-
-  .contacts {
-    text-align: left;
-    text-align: center;
-    padding-left: 20px;
-    position: relative;
-    top: 45px;
-  }
-
-  .contactDiv .headings {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-    color: #a48111;
-  }
-  a .headings {
-    padding-bottom: 20px;
-  }
-
-  .subContact {
-    font-size: 20px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-  .subContact .headings {
-    background-color: aqua;
-  }
-  .socialMediaIcons {
-    position: relative;
-    bottom: -1050px;
-    right: -270px;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
-    align-items: center;
-  }
-
-  #facebookImage {
-    position: relative;
-    top: -280px;
-    border-radius: 10px;
-    height: 160px;
-    width: 160px;
-    margin: 7px;
-  }
-
-  #twitterImage {
-    position: relative;
-    bottom: 280px;
-    border-radius: 10px;
-    height: 160px;
-    width: 160px;
-    margin: 7px;
-  }
-  #LinkedInIcon {
-    position: relative;
-    bottom: 280px;
-    border-radius: 10px;
-    height: 160px;
-    width: 160px;
-    margin: 7px;
-  }
-  #gitIcon {
-    position: relative;
-    bottom: 280px;
-    border-radius: 10px;
-    height: 160px;
-    width: 160px;
-    margin: 7px;
-  }
-
-  End contact
-
-  Start About me
-  #myImage {
-    height: 500px;
-    width: 500px;
-    float: left;
-    position: relative;
-    bottom: -100px;
-    right: -200px;
-    border-radius: 10px;
-    padding-left: 50px;
-  }
-  end contact style
-  Start Skills
-  #htmlIcon {
-    height: 410px;
-    width: 420px;
-    position: relative;
-    bottom: -746px;
-    left: -150px;
-  }
-  #cssIcon {
-    height: 400px;
-    width: 400px;
-    position: relative;
-    bottom: -746px;
-  }
-  #jsIcon {
-    height: 395px;
-    width: 405px;
-    position: relative;
-    bottom: -846px;
-  }
-  #pythonIcon {
-    height: 400px;
-    width: 400px;
-    position: relative;
-    bottom: -846px;
-    left: -150px;
-  }
-  .skillsImages {
-    position: relative;
-    right: -330px;
-  }
-  end Skills
-
-  Start About me
-  #myImage {
-    height: 700px;
-    width: 700px;
-    float: left;
-    position: relative;
-    bottom: -210px;
-    right: -140px;
-    border-radius: 10px;
-  }
-
-  end About me
-} */
