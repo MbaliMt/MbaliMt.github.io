@@ -6,16 +6,26 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.788)),
     url("https://wallup.net/wp-content/uploads/2017/11/23/430250-technology-laptop-keyboards-748x421.jpg");
   background-size: cover;
-  overflow: hidden;
 }
-.hamMenu {
-  width: 50px;
-  margin-bottom: 170px;
-  display: none;
-}
+
 #navbar {
+  display: flex;
+  justify-content: center;
   margin-bottom: 0px;
   padding-bottom: 0px;
+}
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 #navbar ul a {
   text-decoration: none;
@@ -55,7 +65,7 @@ ul {
 .homeText {
   text-align: center;
   color: white;
-  margin-top: 250px;
+  margin-top: 60px;
 }
 .infoText {
 }
@@ -142,7 +152,8 @@ a .headings {
   width: 80px;
   margin: 7px;
 }
-.ulIndex {
+.nav-menu {
+  display: flex;
   margin-bottom: auto;
   font-family: Alegre;
 }
@@ -150,10 +161,29 @@ a .headings {
 /* End contact */
 
 /* Start About me */
-
-.ImageDiv {
-  margin-top: 150px;
+.AboutMeDiv {
+  margin-top: 100px;
+}
+.AboutMeDiv {
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+.AboutMeSection .AboutMeDiv {
+  display: inline;
+  padding-top: 200px;
+  margin-left: -500px;
+}
+.AboutMeDiv {
+  margin-top: -100px;
   display: flex;
+  justify-content: center;
+}
+.ImageDiv {
+  margin-top: 100px;
+  display: flex;
+}
+.AboutMeSection {
+  display: block;
 }
 
 .AboutMeSection p {
@@ -161,26 +191,22 @@ a .headings {
   font-family: "Brygada 1918", serif;
   font-weight: lighter;
   color: white;
-  padding-bottom: 5px;
+  float: left;
+  margin-left: 650px;
   display: flex;
 }
 #cvDiv {
-  margin-top: 50px;
-  margin-left: 50px;
-  display: flex;
-}
-.AboutMeDiv {
-  padding-top: 100px;
+  margin-top: 200px;
+  margin-right: 500px;
 }
 #myImage {
   display: flex;
   height: 500px;
-  width: 500px;
+  width: 600px;
   float: left;
   display: block;
   margin-left: 50px;
   margin-bottom: 200px;
-  margin-right: 50px;
 }
 .buttonCV {
   border: none;
@@ -212,8 +238,8 @@ a .headings {
 
 /* Start skills page */
 .skillsIcons {
-  display: grid;
-  grid-template-columns: 15% 15% ;
+  display: flex;
+  grid-template-columns: 15% 15%;
   margin-top: 220px;
   margin-bottom: 20px;
   justify-content: center;
@@ -312,6 +338,7 @@ a .headings {
   /*About me*/
   #myImage {
     align-self: center;
+    height: 100px;
   }
   /*Contact*/
   .contactDiv h2 {
@@ -324,11 +351,15 @@ a .headings {
     margin-bottom: -130px;
   }
   .AboutMeDiv {
-    padding-top: 0px;
-    margin-top: px;
+    margin-top: 600px;
+    width: 100%;
+  }
+  .AboutMeDiv p {
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: -35px;
+  }
+  .AboutMeSection {
+    margin: -10 0;
   }
   #myImage {
     height: 450px;
@@ -343,191 +374,9 @@ a .headings {
   }
   /*Skills*/
   .skillsIcons {
+    display: grid;
     grid-template-columns: 35% 35%;
     margin-left: 50px;
     margin-top: 120px;
   }
-}
-@media screen and (max-width: 320px) {
-  body {
-    background-size: 100vh;
-  }
-  nav lu li {
-    display: none;
-  }
-  p {
-    font-size: 30px;
-    margin-top: 50px;
-  }
-  h1 {
-    font-size: 40px;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  /* ul {
-    margin-bottom: 170px;
-    display: none;
-  } */
-  #indexButton {
-    padding: 10px 22px;
-    font-size: 10px;
-  }
-  /* .hamMenu {
-    display: grid;
-  } */
-
-  /* #navbar ul {
-    width: 100%;
-    background: linear-gradient(pink);
-    position: absolute;
-    margin-top: 10px;
-    right: 0;
-    z-index: 2;
-  } */
-  /* #navbar ul li {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  } */
-  /*Contact */
-  .contactDiv #info {
-    font-size: 18px;
-    margin-bottom: -50px;
-  }
-  .contactDiv h2 {
-    font-size: 30px;
-    margin-bottom: -30px;
-  }
-  .contactDiv {
-    font-size: 15px;
-    margin-top: 80px;
-  }
-  .contactDiv .headings {
-    font-size: 17px;
-    margin-bottom: -40px;
-  }
-  a .headings {
-    padding-bottom: 5px;
-  }
-  .socialMediaIcons {
-    padding-top: 30px;
-  }
-  .socialMediaIcons .image {
-    border-radius: 10px;
-    height: 50px;
-    width: 50px;
-    margin: 7px;
-  }
-  /*Skills*/
-  #menu {
-            
-    width: 35px;
-    height: 30px;
-    margin: 30px 0px 20px 20px;
-    cursor: pointer;
-}
-.bar {
-    height: 5px;
-    width: 100%;
-    background-color: white;
-    display: block;
-    border-radius: 5px;
-}
-#bar1{
-    transform: translateY(-4px);
-    transition: 0.3s ease;
-}
-
-#bar3{
-    transform: translateY(4px);
-}
-.change .bar {
-    background-color: white;
-}
-.change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
-}
-.change #bar3 {
-    transform: translateY(-6px) rotate(45deg);
-}
-.change #bar2 {
-    opacity: 0;
-}
-.ulIndexbar li a {
-    color: #fff;
-    text-decoration: none;
-}
-.ulIndexbar li {
-    list-style: none;
-    padding: 16px 0;
-}
-.ulIndexbar li a:hover {
-    font-weight: bold;
-}
-.ulIndexbar{
-    padding: 0;
-    margin: 0 20px;
-    transition: 0.3s ease;
-    display: none;
-}
-.change {
-    display: block;
-}
-.menu-bg {
-    height: 0;
-    width: 0;
-    background: radial-gradient(square, pink);
-    transform: 0.3s ease;
-}
-.change-bg{
-    width: 550px;
-    height: 540px;
-}
-.menu-bg #menu-bar {
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
-.skillsIcons {
-  display: grid;
-  grid-template-columns: 10px 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  justify-content: center;
-}
-#htmlIcon {
-  height: 110px;
-  width: 120px;
-  margin-left: -130px;
-  margin-top: -10px;
-  margin-bottom: -10px;
-}
-#cssIcon {
-  height: 100px;
-  width: 100px;
-  margin-left: 40px;
-}
-#jsIcon {
-  height: 95px;
-  width: 105px;
-}
-#pythonIcon {
-  height: 100px;
-  width: 100px;
-  margin-left: -130px;
-}
-.skillsIcon {
-  display: grid;
-  justify-content: center;
-}
-#gitHIcon {
-  height: 95px;
-  width: 100px;
-  margin-left: -130px;
-}
-
 }
