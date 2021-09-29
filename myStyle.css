@@ -142,32 +142,6 @@ a .headings {
   width: 80px;
   margin: 7px;
 }
-
-/* #facebookImage {
-  border-radius: 10px;
-  height: 80px;
-  width: 80px;
-  margin: 7px;
-}
-
-#twitterImage {
-  border-radius: 10px;
-  height: 80px;
-  width: 80px;
-  margin: 7px;
-}
-#LinkedInIcon {
-  border-radius: 10px;
-  height: 80px;
-  width: 80px;
-  margin: 7px;
-}
-#gitIcon {
-  border-radius: 10px;
-  height: 80px;
-  width: 80px;
-  margin: 7px;
-} */
 .ulIndex {
   margin-bottom: auto;
   font-family: Alegre;
@@ -239,7 +213,7 @@ a .headings {
 /* Start skills page */
 .skillsIcons {
   display: grid;
-  grid-template-columns: 15% 15% 15% 15% 15%;
+  grid-template-columns: 15% 15% ;
   margin-top: 220px;
   margin-bottom: 20px;
   justify-content: center;
@@ -378,6 +352,9 @@ a .headings {
   body {
     background-size: 100vh;
   }
+  nav lu li {
+    display: none;
+  }
   p {
     font-size: 30px;
     margin-top: 50px;
@@ -390,17 +367,31 @@ a .headings {
     font-size: 25px;
     margin-bottom: 20px;
   }
-  ul {
+  /* ul {
     margin-bottom: 170px;
     display: none;
-  }
+  } */
   #indexButton {
     padding: 10px 22px;
     font-size: 10px;
   }
-  .hamMenu {
+  /* .hamMenu {
     display: grid;
-  }
+  } */
+
+  /* #navbar ul {
+    width: 100%;
+    background: linear-gradient(pink);
+    position: absolute;
+    margin-top: 10px;
+    right: 0;
+    z-index: 2;
+  } */
+  /* #navbar ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } */
   /*Contact */
   .contactDiv #info {
     font-size: 18px;
@@ -431,5 +422,112 @@ a .headings {
     margin: 7px;
   }
   /*Skills*/
-  
+  #menu {
+            
+    width: 35px;
+    height: 30px;
+    margin: 30px 0px 20px 20px;
+    cursor: pointer;
+}
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+}
+#bar1{
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+#bar3{
+    transform: translateY(4px);
+}
+.change .bar {
+    background-color: white;
+}
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2 {
+    opacity: 0;
+}
+.ulIndexbar li a {
+    color: #fff;
+    text-decoration: none;
+}
+.ulIndexbar li {
+    list-style: none;
+    padding: 16px 0;
+}
+.ulIndexbar li a:hover {
+    font-weight: bold;
+}
+.ulIndexbar{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+.change {
+    display: block;
+}
+.menu-bg {
+    height: 0;
+    width: 0;
+    background: radial-gradient(square, pink);
+    transform: 0.3s ease;
+}
+.change-bg{
+    width: 550px;
+    height: 540px;
+}
+.menu-bg #menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.skillsIcons {
+  display: grid;
+  grid-template-columns: 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+#htmlIcon {
+  height: 110px;
+  width: 120px;
+  margin-left: -130px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+#cssIcon {
+  height: 100px;
+  width: 100px;
+  margin-left: 40px;
+}
+#jsIcon {
+  height: 95px;
+  width: 105px;
+}
+#pythonIcon {
+  height: 100px;
+  width: 100px;
+  margin-left: -130px;
+}
+.skillsIcon {
+  display: grid;
+  justify-content: center;
+}
+#gitHIcon {
+  height: 95px;
+  width: 100px;
+  margin-left: -130px;
+}
+
 }
