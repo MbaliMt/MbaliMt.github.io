@@ -342,9 +342,6 @@ a .headings {
   /*end skills*/
 }
 @media only screen and (max-width: 414px) {
-  .main {
-    text-align: center;
-  }
   header {
     margin-bottom: 50px;
   }
@@ -387,10 +384,10 @@ a .headings {
   #gitHIcon {
     height: 145px;
     width: 150px;
-  }
+  /* }
   .skillsIcon {
     justify-content: center;
-  }
+  } */
 }
 @media only screen and (max-width: 375px) {
   #cssId {
