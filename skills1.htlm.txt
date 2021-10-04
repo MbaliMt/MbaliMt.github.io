@@ -35,17 +35,39 @@
         </div>
       </nav>
     </header>
-    <main class="main"></main>
-    <div class="homeText">
-      <div class="infoText">
-        <p id="hi">Hello, I'm</p>
-        <h1 id="name">Mbali Mtimkulu</h1>
-        <h2>Web Developer</h2>
-      </div>
-      <a href="AboutMe.html" id="indexButton">MORE ABOUT ME</a>
-    </div>
-    </main>  
+    <main class="main">
+     <div class="skillsIcons">
+        <div id="htmldiv">
+          <p id="htmlID">HTML</p>
+        <a>
+          <img src="htmlIcon.png" id="htmlIcon" />
+        </a>
+        </div>
+        <div id="cssDiv">
+          <p id="cssId">CSS</p>
+        <a>
+          <img src="cssIcon.png" id="cssIcon" />
+        </a>
+        </div>
+        <div id="pythonDiv">
+          <p id="pythonId">PYTHON</p>
+        <a>
+          <img src="pythonIcon.png" id="pythonIcon" />
+        </a>
+        </div>    
+        <div id="jsDiv">
+          <p id="jsId">JSCRIPT</p>
+        <a>
+          <img src="jsIcon.png" id="jsIcon" />
+        </a>
+        </div>
+        <div id="gitDiv">
+          <p id="gitId">GIT</p>
+        <a>
+          <img src="gitIcon.png" id="gitHIcon" />
+        </a>
+        </div>
+      </main>
   </body>
-
   <script src="myscript.js"></script>
 </html>

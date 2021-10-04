@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -239,27 +238,28 @@ a .headings {
   margin-bottom: auto;
   font-family: Alegre;
 }
+
 /*About me*/
-.AboutMeSection {
+/* .AboutMeSection {
   display: flex;
   margin-top: 90px;
   justify-content: center;
 }
 .ImageDiv {
   float: right;
-}
-#myImage {
+} */
+/* #myImage {
   display: flex;
   height: 400px;
   width: 400px;
   margin-bottom: 20px;
   border-radius: 20px;
-}
-.AboutMeDiv p{
+} */
+/* .AboutMeDiv p{
   color: white;
   font-size: 2.2rem;
-}
-.CVbutton {
+} */
+/* .CVbutton {
   width: 150px;
   border-radius: 10px;
   background: #a48111;
@@ -269,6 +269,36 @@ a .headings {
   padding: 15px 15px;
   border: none;
   margin-top: 20px;
+} */
+.AboutMeSection {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  font: 500 100%;
+  color: white;
+  padding-top: 10rem;
+  font-size: 1.6rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+#CV {
+  border-radius: 10px;
+  background: #a48111;
+  font-size: 12px;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 30px ;
+  border: none;
+  margin-top: 20px;
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   #myImage {
@@ -321,8 +351,6 @@ a .headings {
   }
   .homeText {
     margin-bottom: 150px;
-  }
-  .infoText {
   }
   p {
     font-size: 90px;
@@ -501,3 +529,14 @@ a .headings {
     margin-top: 150px;
   }
 }
+@media (max-width:  px) {
+  .AboutMeSection {
+      display: block;
+      font-size: 90%;
+    }
+    .aboutMeP {
+      position: relative;
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }
