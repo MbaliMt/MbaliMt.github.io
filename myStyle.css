@@ -100,61 +100,41 @@ h2 {
   font-family: "Alegreya SC", serif;
   font-size: 17px;
 }
-.skillsIcons {
-  display: flex;
-  grid-template-columns: 15% 15%;
-  margin-top: 220px;
-  margin-bottom: 20px;
-  justify-content: center;
-}
-.skillsIcons p {
+.skillsIcons .skillsHeadings {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   color: white;
+  margin-top: 200px;
+  
 }
-#htmlID {
-  margin-left: 50px;
+.skillsIcons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 5px;
+  align-items: center;
+  margin-left: 15%;
 }
-#cssId {
-  margin-left: 60px;
-  margin-right: 0px;
+.iconDiv {
+ max-width: 200px;
+ padding: 0 4px;
+ margin-top: 50px;
 }
-#pythonId {
-  margin-left: 20px;
-  margin-right: 0px;
+.iconDiv img {
+ margin-top: 1px;
+ width: 100%;
+ padding: 10px;
 }
-#jsId {
-  margin-left: 25px;
-  margin-right: 0px;
+.skillsHeadings {
+  text-align: center;
 }
-#gitId {
-  margin-left: 65px;
+.skillsImage {
+  height: 200px;
+  width: 200px;
 }
 #htmlIcon {
   height: 210px;
   width: 220px;
 }
-#cssIcon {
-  height: 200px;
-  width: 200px;
-}
-#jsIcon {
-  height: 195px;
-  width: 205px;
-}
-#pythonIcon {
-  height: 200px;
-  width: 200px;
-}
-.skillsIcon {
-  display: grid;
-  justify-content: center;
-}
-#gitHIcon {
-  height: 195px;
-  width: 200px;
-}
-
 #navbar1 ul a {
   text-decoration: none;
   color: white;
@@ -239,37 +219,6 @@ a .headings {
   font-family: Alegre;
 }
 
-/*About me*/
-/* .AboutMeSection {
-  display: flex;
-  margin-top: 90px;
-  justify-content: center;
-}
-.ImageDiv {
-  float: right;
-} */
-/* #myImage {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-} */
-/* .AboutMeDiv p{
-  color: white;
-  font-size: 2.2rem;
-} */
-/* .CVbutton {
-  width: 150px;
-  border-radius: 10px;
-  background: #a48111;
-  font-size: 12px;
-  color: #fff;
-  font-size: 16px;
-  padding: 15px 15px;
-  border: none;
-  margin-top: 20px;
-} */
 .AboutMeSection {
   display: grid;
   padding: 2rem;
@@ -281,10 +230,12 @@ a .headings {
   font: 500 100%;
   color: white;
   padding-top: 10rem;
-  font-size: 1.6rem;
   font-family: "Segoe UI", Arial, sans-serif;
 }
-img {
+.aboutMeP {
+  font-size: 2.6rem;
+}
+#myImg {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -299,6 +250,12 @@ img {
   border: none;
   margin-top: 20px;
   text-decoration: none;
+}
+#projectsId {
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
 }
 @media (max-width: 768px) {
   #myImage {
@@ -406,40 +363,27 @@ img {
     margin-left: 20%;
   }
   /*Skills*/
-  .skillsIcons {
-    display: grid;
-    margin-top: 120px;
-  }
-  #htmlID {
-    margin-left: -80px;
-  }
-  #cssId {
-    margin-left: 120px;
-  }
-  #pythonId {
-    margin-left: -120px;
-    margin-right: 0px;
-  }
-  #jsId {
-    margin-left: 70px;
-  }
-  #gitId {
-    margin-left: 65px;
-  }
-  #htmlIcon {
-    margin-left: -130px;
-  }
-  #cssIcon {
-    margin-left: 50px;
-  }
-  #jsIcon {
-    margin-left: 50px;
-  }
-  #pythonIcon {
-    margin-left: -120px;
+  .skillsIcons .skillsHeadings {
+    margin-top: 50px; 
   }
   /*end skills*/
 }
+@media (max-width:  650px) {
+  .AboutMeSection {
+      display: block;
+      font-size: 90%;
+    }
+    .aboutMeP {
+      position: relative;
+      margin: 1rem;
+      padding: 1rem;
+    }
+    .iconDiv {
+      grid: 100%;
+      max-width: 100%;
+   }
+ 
+  }
 @media (max-width: 414px) {
   header {
     margin-bottom: 50px;
@@ -463,80 +407,44 @@ img {
     font-size: 17px;
   }
   /*Skills*/
-  #htmlIcon {
-    height: 160px;
-    width: 170px;
-  }
-  #cssIcon {
-    height: 150px;
-    width: 150px;
-  }
-  #jsIcon {
-    height: 145px;
-    width: 155px;
-  }
-  #pythonIcon {
-    height: 150px;
-    width: 150px;
-  }
-
-  #gitHIcon {
-    height: 145px;
-    width: 150px;
+  .skillsIcons .skillsHeadings {
+    margin-top: 30px; 
   }
 }
 @media (max-width: 375px) {
-  #cssId {
-    margin-left: 90px;
+
+  .contactDiv #info {
+    font-size: 20px;
   }
-  #htmlIcon {
-    height: 160px;
-    width: 170px;
+  .contactDiv .headings {
+    font-size: 20px;
   }
-  #htmlID {
-    margin-left: -80px;
+  .subAct {
+    font-size: 20px;
   }
-  #cssId {
-    margin-left: 120px;
+  .subContact .headings {
+    background-color: aqua;
   }
-  #pythonId {
-    margin-left: -120px;
-    margin-right: 0px;
+  .socialMediaIcons {
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
   }
-  #jsId {
-    margin-left: 90px;
+  .socialMediaIcons .image {
+    height: 50px;
+    width: 50px;
+    margin: 7px;
   }
-  #gitId {
-    margin-left: 65px;
+  .nav-menu {
+    display: flex;
+    margin-bottom: auto;
   }
-  #htmlIcon {
-    height: 100px;
-    width: 100px;
-  }
-  #htmlIcon {
-    margin-left: -130px;
-  }
-  #cssIcon {
-    margin-left: 50px;
-  }
-  #jsIcon {
-    margin-left: 50px;
-  }
-  #pythonIcon {
-    margin-left: -120px;
-  }
-  .skillsIcons {
-    margin-top: 150px;
+  #contact {
+    font-size: 30px;
+  } 
+  .AboutMeSection{
+    margin-top: 20px;
   }
 }
-@media (max-width:  px) {
-  .AboutMeSection {
-      display: block;
-      font-size: 90%;
-    }
-    .aboutMeP {
-      position: relative;
-      margin: 1rem;
-      padding: 1rem;
-    }
-  }
