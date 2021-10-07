@@ -105,24 +105,23 @@ h2 {
   font-size: 40px;
   color: white;
   margin-top: 200px;
-  
 }
+
 .skillsIcons {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 5px;
-  align-items: center;
   margin-left: 15%;
 }
 .iconDiv {
- max-width: 200px;
- padding: 0 4px;
- margin-top: 50px;
+  max-width: 200px;
+  padding: 0 4px;
+  margin-top: 50px;
 }
 .iconDiv img {
- margin-top: 1px;
- width: 100%;
- padding: 10px;
+  margin-top: 1px;
+  width: 100%;
+  padding: 10px;
 }
 .skillsHeadings {
   text-align: center;
@@ -131,10 +130,10 @@ h2 {
   height: 200px;
   width: 200px;
 }
-#htmlIcon {
+/* #htmlIcon {
   height: 210px;
   width: 220px;
-}
+} */
 #navbar1 ul a {
   text-decoration: none;
   color: white;
@@ -246,7 +245,7 @@ a .headings {
   font-size: 12px;
   color: #fff;
   font-size: 16px;
-  padding: 15px 30px ;
+  padding: 15px 30px;
   border: none;
   margin-top: 20px;
   text-decoration: none;
@@ -365,26 +364,38 @@ a .headings {
   }
   /*Skills*/
   .skillsIcons .skillsHeadings {
-    margin-top: 50px; 
+    margin-top: 50px;
   }
   /*end skills*/
-}
-@media (max-width:  650px) {
-  .AboutMeSection {
-      display: block;
-      font-size: 90%;
-    }
-    .aboutMeP {
-      position: relative;
-      margin: 1rem;
-      padding: 1rem;
-    }
-    .iconDiv {
-      grid: 100%;
-      max-width: 100%;
-   }
- 
+  .skillsIcons {
+    margin-left: 5%;
   }
+}
+@media (max-width: 650px) {
+  .AboutMeSection {
+    display: block;
+    font-size: 90%;
+  }
+  .aboutMeP {
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .iconDiv {
+    grid: 100%;
+    max-width: 100%;
+  }
+  .skillsIcons {
+    margin-left: 5%;
+  }
+  .skillsIcons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    margin-left: 0%;
+  }
+}
+
 @media (max-width: 414px) {
   header {
     margin-bottom: 50px;
@@ -408,12 +419,18 @@ a .headings {
     font-size: 17px;
   }
   /*Skills*/
-  .skillsIcons .skillsHeadings {
-    margin-top: 30px; 
+  .skillsIcons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    margin-left: 0%;
+  }
+  .skillsImage {
+    height: 200px;
+    width: 200px;
   }
 }
 @media (max-width: 375px) {
-
   .contactDiv #info {
     font-size: 20px;
   }
@@ -444,8 +461,14 @@ a .headings {
   }
   #contact {
     font-size: 30px;
-  } 
-  .AboutMeSection{
+  }
+  .AboutMeSection {
     margin-top: 20px;
+  }
+  .skillsIcons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    margin-left: 0%;
   }
 }
