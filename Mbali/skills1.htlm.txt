@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="myStyle.css" />
+    <title>Mbali Mtimkulu</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="AboutMe.html" class="link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="Skills.html" class="link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="Projects.html" class="link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="Contact.html" class="link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+     <div class="skillsIcons">
+        <div id="htmldiv">
+          <p id="htmlID">HTML</p>
+        <a>
+          <img src="htmlIcon.png" id="htmlIcon" />
+        </a>
+        </div>
+        <div id="cssDiv">
+          <p id="cssId">CSS</p>
+        <a>
+          <img src="cssIcon.png" id="cssIcon" />
+        </a>
+        </div>
+        <div id="pythonDiv">
+          <p id="pythonId">PYTHON</p>
+        <a>
+          <img src="pythonIcon.png" id="pythonIcon" />
+        </a>
+        </div>    
+        <div id="jsDiv">
+          <p id="jsId">JSCRIPT</p>
+        <a>
+          <img src="jsIcon.png" id="jsIcon" />
+        </a>
+        </div>
+        <div id="gitDiv">
+          <p id="gitId">GIT</p>
+        <a>
+          <img src="gitIcon.png" id="gitHIcon" />
+        </a>
+        </div>
+      </main>
+  </body>
+  <script src="myscript.js"></script>
+</html>
