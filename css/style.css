@@ -91,22 +91,30 @@ section {
   top: 50%;
 }
 #about {
+  padding-top: 90px;
   background-color: #f0dc82;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 900px;
+}
+#circleBox1{
+  display: grid;
+}
+#circleBox2{
+  display: grid;
 }
 
-#product {
+
+#skills {
   background-color: #996515;
 }
-/* .productDiv {
+
+#projects {
+  background-color: #f0dc82;
+}
+#contact{
   background-color: #996515;
-  position: absolute;
-  height: 570px;
-  width: 1400px;
-  left: 4%;
-  top: 6%;
-} */
-#pricing {
-  background-color: #eee8aa;
 }
 
 h1 {
@@ -135,10 +143,10 @@ h1 {
 }
 #aboutPage {
   display: block;
-  justify-content: start;
+  /* justify-content: start; */
   position: absolute;
-  top: 50%;
-  left: 20%;
+  top: 40%;
+  left: 35%;
 }
 
 #homeP {
@@ -184,8 +192,6 @@ h2 {
 
 }
 
-
-
 .gallery:after{
   content:'';
 }
@@ -197,11 +203,11 @@ img{
 
 .clipped-border{
   margin-top: 170px;
-  margin-left: 350px;
+  margin-left: 400px;
   -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
    padding:5px;
-   background:white;
+   background:#f0dc82;
    width:var(--border-width);
    height:var(--border-height);
    max-height:250px;
@@ -265,7 +271,114 @@ clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   transition:transform 0.2s;
   z-index:10;
 }
+.skillsH1 {
+  color: 	#303030;
+}
+#projectH1{
+  color: 	#303030;
+}
 
 
+/* Contact Section  */
+.contactDiv {
+  display: flex;
+  justify-content: center;
+}
+.contactDiv #info {
+  font-family: "Brygada 1918", serif;
+  font-size: 30px;
+  text-align: center;
+}
+.contactDiv {
+  font-size: 25px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 180px;
+}
 
+.contacts {
+  text-align: left;
+  text-align: center;
+  padding-left: 20px;
+}
 
+.contactDiv .headings {
+  font-family: "Ariel";
+  font-size: 25px;
+  color: black;
+}
+a .headings {
+  padding-bottom: 20px;
+}
+
+.subAct {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.subContact .headings {
+  background-color: aqua;
+}
+.socialMediaIcons {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.socialMediaIcons .image {
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  margin: 7px;
+}
+
+#circle1 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 300px;
+}
+
+#circle2 {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 80px;
+}
+#circle3 {
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  margin-left: 150px;
+}
+#circle4 {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: 30px;
+}
+#circle5 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -200px;
+}
+#circle6 {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+}
+#circle7 {
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  margin-left: -220px;
+}
+
+#circle8 {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
