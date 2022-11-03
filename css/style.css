@@ -59,7 +59,7 @@ section {
   display: flex;
 }
 #homeDiv {
-  background-color: #eee8aa;
+  background-color: #eae0c8;
   height: 450px;
   width: 400px;
   position: absolute;
@@ -91,7 +91,7 @@ section {
   top: 50%;
 }
 #about {
-  background-color: #eee8aa;
+  background-color: #f0dc82;
 }
 
 #product {
@@ -158,7 +158,7 @@ h2 {
 #indexButton {
   border: none;
   color: black;
-  background-color: #eee8aa;
+  background-color: #f7e98e;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -201,7 +201,7 @@ img{
   -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
    padding:5px;
-   background:linear-gradient(grey,lightgrey);
+   background:white;
    width:var(--border-width);
    height:var(--border-height);
    max-height:250px;
@@ -211,6 +211,7 @@ img{
    transition:transform 0.2s;
    position:absolute;
    cursor:pointer;
+   border: 3px solid #eee8aa;
 }
 
 
