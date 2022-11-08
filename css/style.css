@@ -291,7 +291,43 @@ img {
   transition: transform 0.2s;
   z-index: 10;
 }
-
+#IconDiv{
+  position: relative;
+  top: 25%;
+}
+#icon{
+  position: relative;
+  left : 40%;
+  padding-bottom: 5px;
+}
+#iconP{
+  position: relative;
+  left : 40%
+}
+.jsIcon{
+  height: 65px;
+  width: 65px;
+  position: relative;
+  left : 37%
+}
+#jsP{
+  position: relative;
+  left : 35%
+}
+#postmanP{
+  position: relative;
+  left : 37%
+}
+#gitP{
+  position: relative;
+  left : 45%
+}
+.postmanIcon{
+  height: 65px;
+  width: 65px;
+  position: relative;
+  left : 37%
+}
 #skillsHeading {
   position: absolute;
   top: 15%;
