@@ -291,42 +291,42 @@ img {
   transition: transform 0.2s;
   z-index: 10;
 }
-#IconDiv{
+#IconDiv {
   position: relative;
   top: 25%;
 }
-#icon{
+#icon {
   position: relative;
-  left : 40%;
+  left: 40%;
   padding-bottom: 5px;
 }
-#iconP{
+#iconP {
   position: relative;
-  left : 40%
+  left: 40%;
 }
-.jsIcon{
+.jsIcon {
   height: 65px;
   width: 65px;
   position: relative;
-  left : 37%
+  left: 37%;
 }
-#jsP{
+#jsP {
   position: relative;
-  left : 35%
+  left: 35%;
 }
-#postmanP{
+#postmanP {
   position: relative;
-  left : 37%
+  left: 37%;
 }
-#gitP{
+#gitP {
   position: relative;
-  left : 45%
+  left: 45%;
 }
-.postmanIcon{
+.postmanIcon {
   height: 65px;
   width: 65px;
   position: relative;
-  left : 37%
+  left: 37%;
 }
 #skillsHeading {
   position: absolute;
