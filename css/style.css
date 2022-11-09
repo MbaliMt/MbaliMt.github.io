@@ -116,12 +116,29 @@ section {
 
 #projects {
   background-color: #f0dc82;
+  
 }
 #projectsHeading {
   position: absolute;
   top: 20%;
   color: #303030;
 }
+#card{
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  left: 45%;
+  top: 35%;
+}
+
+#projectH1 {
+  color: #303030;
+  position: absolute;
+  top: 70%;
+}
+
+
 #contact {
   background-color: #996515;
 }
@@ -332,9 +349,6 @@ img {
   position: absolute;
   top: 15%;
   right: 46%;
-  color: #303030;
-}
-#projectH1 {
   color: #303030;
 }
 
