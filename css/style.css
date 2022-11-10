@@ -170,9 +170,6 @@ section {
 }
 
 
-#contact {
-  background-color: #996515;
-}
 
 h1 {
   position: absolute;
@@ -384,36 +381,43 @@ img {
 }
 
 /* Contact Section  */
+#contact {
+  background-color: #996515;
+  height: 50%;
+}
+#contactH{
+  font-size: 30px;
+}
 .contactDiv {
   display: flex;
   justify-content: center;
 }
 .contactDiv #info {
   font-family: "Brygada 1918", serif;
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
 }
 .contactDiv {
-  font-size: 25px;
+  font-size: 15px;
   color: white;
   display: block;
   text-align: center;
-  margin-top: 160px;
+  margin-top: 50px;
 }
 
 .contacts {
   text-align: left;
   text-align: center;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .contactDiv .headings {
   font-family: "Ariel";
-  font-size: 25px;
+  font-size: 15px;
   color: black;
 }
 a .headings {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .subAct {
@@ -428,13 +432,14 @@ a .headings {
   padding-bottom: 0%;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 15px;
+  padding-bottom: 10px;
 }
 .socialMediaIcons .image {
   border-radius: 10px;
-  height: 60px;
-  width: 60px;
-  margin: 7px;
+  height: 55px;
+  width: 55px;
+  margin: 5px;
 }
 
 #circle1 {
