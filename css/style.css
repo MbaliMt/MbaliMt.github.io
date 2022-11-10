@@ -123,6 +123,16 @@ section {
   top: 20%;
   color: #303030;
 }
+#free{
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+}
 #card{
   border-radius: 10px;
   width: 150px;
@@ -132,9 +142,30 @@ section {
   top: 35%;
 }
 
+#rank{
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  left: 60%;
+  top: 35%;
+}
+
 #projectH1 {
   color: #303030;
   position: absolute;
+  top: 70%;
+}
+.free{
+  position: absolute;
+  left: 35%;
+  top: 70%;
+}
+.rank{
+  position: absolute;
+  left: 65%;
   top: 70%;
 }
 
