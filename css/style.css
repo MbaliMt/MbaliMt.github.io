@@ -96,19 +96,15 @@ section {
   top: 50%;
 }
 #about {
-  padding-top: 90px;
   background-color: #f0dc82;
+}
+.aboutContainer{
+  padding-top: 120px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
-  grid-gap: 900px;
 }
-#circleBox1 {
-  display: grid;
-}
-#circleBox2 {
-  display: grid;
-}
+
 
 #skills {
   background-color: #996515;
@@ -116,41 +112,36 @@ section {
 
 #projects {
   background-color: #f0dc82;
-  
 }
 #projectsHeading {
   position: absolute;
   top: 20%;
   color: #303030;
 }
+.projectsContainer{
+ display: grid;
+ grid-template-columns: repeat(3, auto);
+ justify-content: center;
+ gap: 60px ;
+  bottom:0;
+  left:0;
+  right:0;
+}
 #free{
-  width: 150px;
+  width: 200px;
   height: 200px;
   border-radius: 10px;
-  width: 150px;
-  height: 200px;
-  position: absolute;
-  left: 30%;
-  top: 35%;
 }
 #card{
   border-radius: 10px;
-  width: 150px;
+  width: 200px;
   height: 200px;
-  position: absolute;
-  left: 45%;
-  top: 35%;
 }
 
 #rank{
-  width: 150px;
+  width: 200px;
   height: 200px;
   border-radius: 10px;
-  width: 150px;
-  height: 200px;
-  position: absolute;
-  left: 60%;
-  top: 35%;
 }
 
 #projectH1 {
@@ -158,19 +149,48 @@ section {
   position: absolute;
   top: 70%;
 }
-.free{
-  position: absolute;
-  left: 35%;
-  top: 70%;
+
+@-webkit-keyframes uparrow {
+  0% { -webkit-transform: translateY(0); opacity: 0.4 }
+  100% { -webkit-transform: translateY(-0.4em); opacity: 0.9 }
 }
-.rank{
-  position: absolute;
-  left: 65%;
-  top: 70%;
+@-webkit-keyframes downarrow {
+  0% { -webkit-transform: translateY(0); opacity: 0.4 }
+  100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
 }
 
+.container {
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  position:absolute;
+}
+.arrow {
+  border-color:transparent;
+  border-style:solid;
+  border-width:0 2em;
+  display:block;
+  height:0;
+  margin:10em auto;
+  opacity:0.4;
+  text-indent:-9999px;
+  transform-origin: 50% 50%;
+  width:0;
+}
 
+.down {
+  -webkit-animation: downarrow 0.6s infinite alternate ease-in-out;
+  border-top:2em solid #001747;
+}
 
+.cardDiv{
+  display: grid;
+  grid-template-rows: auto;
+}
+.freeDiv{
+
+}
 h1 {
   position: absolute;
   top: 50%;
@@ -197,15 +217,13 @@ h1 {
 }
 #aboutMe {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 48%;
   color: #303030;
 }
 #aboutPage {
-  display: block;
-  position: absolute;
-  top: 40%;
-  left: 35%;
+ padding-top: 100px;
+ text-align: center; 
 }
 
 #homeP {
@@ -471,23 +489,23 @@ a .headings {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  margin-left: -200px;
+  margin-left: 100px;
 }
 #circle6 {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  margin-left: -60px;
+  margin-left: 230px;
 }
 #circle7 {
   border-radius: 50%;
   width: 135px;
   height: 135px;
-  margin-left: -220px;
+  margin-left: 100px;
 }
-
 #circle8 {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  margin-left: 250px;
 }
