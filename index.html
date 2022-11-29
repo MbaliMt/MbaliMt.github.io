@@ -1,145 +1,34 @@
+index.html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Mbali Mtimkulu Simple Website</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  </head>
-
-  <body>
-    <header>
-      <ul id="menu">
-        <li><a href="#home" class="link">Home</a></li>
-        <li><a href="#about" class="link">About Me</a></li>
-        <li><a href="#skills" class="link">Skills</a></li>
-        <li><a href="#projects" class="link">Projects</a></li>
-        <li><a href="#contact" class="link">Contact Me</a></li>
-      </ul>
-    </header>
-    <section id="home">
-      <div id="homeDiv">
-        <div id="imageDiv"><img src="./images/me2.png" class="homeImg" /></div>
-      </div>
-      <div id="homeText">
-        <br />
-        <br />
-        <p id="homeP">Hello, I'm</p>
-        <br />
-        <p id="myName">Mbali Mtimkulu</p>
-        <h2>Web Developer</h2>
-        <p id="idQuote">"True happiness involves the full use of one's power and talents" - John W. Gardner</p>
-        <a id="indexButton" href="./pdfFiles/Mbali Mtimkulu CV.pdf" download="Mbali Mthimkhulu" target="_blank">DOWNLOAD MY CV</a>
-      </div>
-    </section>
-    <section id="about">
-      <h1 id="aboutMe">About Me</h1>
-            <div class="aboutContainer">
-      <div id="circleBox1">
-        <div><img id="circle1" src="./images/music1.png"></div>
-        <div><img id="circle2" src="./images/dance3.png"></div>
-        <div><img id="circle3" src="./images/girlcode.png"></div>
-        <div><img id="circle4" src="./images/code.png"></div>
-      </div>
-      <div id="aboutPage">
-          <p class="aboutMe">I am currently a learner at Umuzi doing Web development</p> 
-          <p class="aboutMe">and I have so far gained skills in HTML,</p>
-           <p class="aboutMe">JavaScript, Css as well as working wth API's using Postman.</p>
-          <p class="aboutMe">I completed a higher certificate in Software Development</p> 
-          <p class="aboutMe">and have experience working as a Technician.</p>
-          <p class="aboutMe">My interests are coding, listening to soul music</p>
-           <p class="aboutMe">and dancing.</p>
-      </div>
-      <div id="circleBox2">
-        <div><img id="circle5" src="./images/code1.png"></div>
-        <div><img id="circle6" src="./images/guycode.png"></div>
-        <div><img id="circle7" src="./images/dance1.png"></div>
-        <div><img id="circle8" src="./images/music2.png"></div>
-      </div>
-    </div>
-    </section>
-
-    <section id="skills">
-      <h1 id="skillsHeading">Skills</h1>
-        <div class="gallery">
-          <div class="clipped-border">
-            <div id="IconDiv">
-            <i class="fab fa-css3 fa-3x" id="icon"></i>
-            <p id="iconP">CSS3</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex-nav">
+            <div class="nav-header">
+                <h2>Code <span>Brew</span></h2>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-          </div>
-          <div class="clipped-border" >
-            <div id="IconDiv">
-              <i class="fab fa-html5 fa-4x" id="icon"></i>
-            <p id="iconP">HTML5</p>
-            </div>
-          </div>
-          <div class="clipped-border">
-            <div id="IconDiv">
-              <img src="./images/javascript-logo.png" class="jsIcon">
-            <p id="jsP">JavaScript</p>
-            </div>
-          </div>
-            <div class="clipped-border">
-              <div id="IconDiv">
-                <i class="fab fa-git-square fa-4x" id="icon"></i>
-              <p id="gitP">GIT</p>
-              </div>
-          </div>
-            <div class="clipped-border">
-              <div id="IconDiv">
-                <img src="./images/postman.png" class="postmanIcon">
-              <p id="postmanP">Postman</p>
-          </div>
-      </div>
-    </section>
-    <section id="projects">
-      <h1 id="projectsHeading">Projects</h1>
-      <div class="container">
-        <a href="#" class="arrow down">Down</a>
-      
-      <div class="projectsContainer">
-      <div id="freeDiv">
-      <a href="https://www.freecodecamp.org/fcc1e5b6f83-d79f-4b8d-8a70-14175b290e87" target="_blank"><img src="./images/freecodecamp-icon-filled.png" id="free"></a>
-    </div>
-    <div id="cardDiv">
-    <a href="https://mbakz.github.io/" target="_blank"><img src="./images/memory-card.PNG" id="card"></a>
-  </div>
-  <div id="rankDiv">
-  <a href="https://www.hackerrank.com/mz_mthimkhulu" target="_blank"><img src="./images/HackerRank_Icon-1000px.png" id="rank"></a>
-</div>
-</div>
-</div>
-    </section>
-    <section id="contact">
-      <div class="contactDiv">
-        <h2 id="contactH">Contact</h2>
-      <br>
-      <p class="headings">PHONE</br></p>
-      <p id="info">+27 762935937</br></p>
-      <br>
-      <p class="headings">ADDRESS</br></p>
-      <p id="info">2754 Xorile Street</br> Zola South</br> 1868</p>
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">About Me</a></li>
+                    <li class="nav-link"><a href="#">Skills</a></li>
+                    <li class="nav-link"><a href="#"><span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
-    <div class="socialMediaIcons">
-        <a href="https://www.facebook.com/mbali.mthimkhulu.583" target="_blank">
-          <img src="./images/facebookIcon.png" alt="facebookP"  class="image">
-        </a>
-        <a href="https://twitter.com/MbaliMthimkhulu" target="_blank">
-          <img src="./images/twitterIcon.png" alt="twitterIcon"  class="image">
-        </a>
-        <a href="https://www.linkedin.com/in/mbali-mtimkulu-a8339612b/" target="_blank">
-          <img src="./images/inIcon.png" alt="LinkedInIcon"  class="image">
-        </a>
-        <a href="https://github.com/MbaliMt" target="_blank">
-          <img src="./images/githubIcon.png" alt="gitIcon"  class="image">
-        </a>
-        <a href="mailto:mz.mthimkhulu@gmail.com" target="_blank">
-          <img src="./images/email.png" alt="emailIcon"  class="image">
-        </a>
-    </div>
-    </section>
-  </body>
+
+    <script src="./src/script.js"></script>
+</body>
 </html>
+

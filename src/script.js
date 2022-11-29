@@ -1,32 +1,14 @@
-$(window).scroll(function () {
-  if ($("#aboutus").isVisible()) {
-    if (oneElementHasHoverEffect == 0) {
-      $(".aboutList").addClass("hoverEffect");
-      oneElementHasHoverEffect = 1;
-    }
-  } else {
-    $(".aboutList").removeClass("hoverEffect");
-    oneElementHasHoverEffect = 0;
-  }
+// const navbar = document.querySelector(".navbar");
+// const menuToggle = document.querySelector(".menu-toggle");
+// menuToggle.addEventListener("click", () => {
+//   navbar.classList.toggle("open");
+// });
 
-  if ($("#parallax").isVisible()) {
-    if (oneElementHasHoverEffect == 0) {
-      $(".thinkList").addClass("hoverEffect");
-      oneElementHasHoverEffect = 1;
-    }
-  } else {
-    $(".thinkList").removeClass("hoverEffect");
-    oneElementHasHoverEffect = 0;
-  }
+// nav toggle - select button and links
+const navToggle = document.querySelector("#navToggle")
+const nav = document.querySelector("#nav-links")
 
-  if ($("#services").isVisible()) {
-    if (oneElementHasHoverEffect == 0) {
-      $(".toolList").addClass("hoverEffect");
-      oneElementHasHoverEffect = 1;
-    }
-  } else {
-    $(".toolList").removeClass("hoverEffect");
-    oneElementHasHoverEffect = 0;
-  }
-});
-
+// // add event listener
+navToggle.addEventListener("click", () => {
+nav.classList.toggle('nav-open')
+})
