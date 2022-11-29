@@ -1,4 +1,3 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,8 @@ index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Nav</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 </head>
 <body>
     <div class="navbar">
@@ -18,16 +19,97 @@ index.html
             </div>
             <nav class="nav-links" id="nav-links">
                 <ul>
-                    <li class="nav-link"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#">About Me</a></li>
-                    <li class="nav-link"><a href="#">Skills</a></li>
-                    <li class="nav-link"><a href="#"><span>Contact</span></a></li>
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about">About Me</a></li>
+                    <li class="nav-link"><a href="#skills">Skills</a></li>
+                    <li class="nav-link"><a href="#projects">Projects</a></li>
+                    <li class="nav-link"><a href="#contacts"><span>Contact</span></a></li>
                 </ul>
             </nav>
         </div>
     </div>
+    <section id="home">
+        <div class="imageDiv">
+            <div id="imageDeco">
+                <img src="./images/me.jpg" id="myImage">
+            </div>
+        </div>
+        <div class="homeDiv">
+            <div id="homeText">
+                <p id="homeP">Hello, I'm</p>
+                <p id="myName">Mbali Mtimkulu</p>
+                <h2>Web Developer</h2>
+                <p id="idQuote">"True happiness involves the full use of one's power and talents" - John W. Gardner</p>
+                <a id="indexButton" href="./pdfFiles/Mbali Mtimkulu CV.pdf" download="Mbali Mthimkhulu" target="_blank">DOWNLOAD MY CV</a>
+        </div>
+    </div>
+    </section>
+    <section id="about">
+        <h1 id="aboutMe">About Me</h1>
+        <div class="aboutContainer">
+  <div id="circleBox1">
+    <div><img id="circle1" src="./images/music1.png"></div>
+    <div><img id="circle2" src="./images/dance3.png"></div>
+    <div><img id="circle3" src="./images/girlcode.png"></div>
+    <div><img id="circle4" src="./images/code.png"></div>
+  </div>
+  <div id="aboutPage">
+      <p class="aboutMe">I am currently a learner at Umuzi doing Web development</p> 
+      <p class="aboutMe">and I have so far gained skills in HTML,</p>
+       <p class="aboutMe">JavaScript, Css as well as working wth API's using Postman.</p>
+      <p class="aboutMe">I completed a higher certificate in Software Development</p> 
+      <p class="aboutMe">and have experience working as a Technician.</p>
+      <p class="aboutMe">My interests are coding, listening to soul music</p>
+       <p class="aboutMe">and dancing.</p>
+  </div>
+  <div id="circleBox2">
+    <div><img id="circle5" src="./images/code1.png"></div>
+    <div><img id="circle6" src="./images/guycode.png"></div>
+    <div><img id="circle7" src="./images/dance1.png"></div>
+    <div><img id="circle8" src="./images/music2.png"></div>
+  </div>
+</div>
+    </section>
+    <section id="skills">
+        <h1 id="skillsHeading">Skills</h1>
+        <div class="gallery">
+          <div class="clipped-border">
+            <div id="IconDiv">
+            <i class="fab fa-css3 fa-3x" id="icon"></i>
+            <p id="iconP">CSS3</p>
+            </div>
+          </div>
+          <div class="clipped-border" >
+            <div id="IconDiv">
+              <i class="fab fa-html5 fa-4x" id="icon"></i>
+            <p id="iconP">HTML5</p>
+            </div>
+          </div>
+          <div class="clipped-border">
+            <div id="IconDiv">
+              <img src="./images/javascript-logo.png" class="jsIcon">
+            <p id="jsP">JavaScript</p>
+        </div>
+        <div class="clipped-border">
+          <div id="IconDiv">
+            <i class="fab fa-git-square fa-4x" id="icon"></i>
+          <p id="gitP">GIT</p>
+          </div>
+      </div>
+        <div class="clipped-border">
+          <div id="IconDiv">
+            <img src="./images/postman.png" class="postmanIcon">
+          <p id="postmanP">Postman</p>
+      </div>
+  </div>
 
+    </section>
+    <section id="projects">
 
+    </section>
+    <section id="contacts">
+         
+    </section>
     <script src="./src/script.js"></script>
 </body>
 </html>
