@@ -26,7 +26,7 @@ section{
 }
 
 #home{
-  
+  background-color: #996515;
 }
 
 #about{
@@ -38,9 +38,10 @@ section{
 }
 #projects{
   background-color: #f0dc82;
+  overflow: scroll;
 }
 
-#contacts{
+#contact{
   background-color: #996515;
 }
 
@@ -64,7 +65,7 @@ a {
 
 /* Navbar */
 .navbar {
-  background: rgb(20, 20, 20);
+  /* background: rgb(20, 20, 20); */
   position: fixed;
   width: 100%;
 }
@@ -100,13 +101,13 @@ a {
   height: 100vh;
 }
 #home{
-  background-color: blueviolet;
+  overflow: scroll;
+  background-color: #996515;
   height: 700px;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 .imageDiv{
-  background-color: blue;
   display: grid;
   height: 700px;
   display: grid;
@@ -115,7 +116,6 @@ a {
   justify-content: center;
 }
 .homeDiv{
-  background-color: gray;
   height: 700px;
   color: black;
   display: grid;
@@ -130,9 +130,10 @@ a {
 #myImage{
   height: 400px;
   width: 380px;
-  position:absolute;
-  top:27%;
-  left: 10%
+  margin-right: 200px;
+  /* position:absolute; */
+  /* top:10%;
+  left: 10% */
 }
 
 .homeDiv{
@@ -149,7 +150,6 @@ a {
 }
 
 html,body{
-  background:radial-gradient(mistyrose,pink);
   height:100%;
   width:100%;
   position:relative;
@@ -158,8 +158,12 @@ html,body{
 
 .gallery{
   position:relative;
+  top: 20%;
+  left: 25%;
   height:50%;
-  width:50%;
+  width:50%
+  l
+
 }
 
 .gallery:after{
@@ -276,7 +280,29 @@ clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   height: 80px;
 }
 /* End About */
-
+.projectsContainer{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  margin-top: 200px;
+}
+#freeDiv{
+  height: 200px;
+  width: 200px;
+}
+#cardDiv{
+  height: 200px;
+  width: 200px;
+}
+#rankDiv{
+  height: 200px;
+  width: 200px;
+}.socialMediaIcons .image {
+  border-radius: 10px;
+  height: 55px;
+  width: 55px;
+  margin: 5px;
+}
 @media only screen and (min-width: 900px) {
   .nav-toggle {
     display: none;
@@ -307,14 +333,13 @@ clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   }
 
   .nav-links span {
-    background: rgb(70, 70, 70);
+    /* background: rgb(70, 70, 70); */
     padding: 8px 15px;
     border-radius: 4px;
   }
-
+  
   /* Me */
   #home{
-    background-color: blueviolet;
     height: 700px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -383,5 +408,179 @@ clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   height: 150px;
   margin-left: 250px;
 }
+/* Contact Section  */
+#contact {
+  background-color: #996515;
+  height: 50%;
+}
+#contactH{
+  font-size: 30px;
+}
+.contactDiv {
+  display: flex;
+  justify-content: center;
+}
+.contactDiv #info {
+  font-family: "Brygada 1918", serif;
+  font-size: 18px;
+  text-align: center;
+}
+.contactDiv {
+  font-size: 15px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contacts {
+  text-align: left;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.contactDiv .headings {
+  font-family: "Ariel";
+  font-size: 15px;
+  color: black;
+}
+a .headings {
+  padding-bottom: 25px;
+}
+
+.subAct {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.subContact .headings {
+  /* background-color: aqua; */
+}
+.socialMediaIcons {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+.socialMediaIcons .image {
+  border-radius: 10px;
+  height: 55px;
+  width: 55px;
+  margin: 5px;
+}
+#IconDiv {
+  position: relative;
+  top: 25%;
+}
+#icon {
+  position: relative;
+  left: 40%;
+  padding-bottom: 5px;
+}
+#iconP {
+  position: relative;
+  left: 40%;
+}
+.jsIcon {
+  height: 65px;
+  width: 65px;
+  position: relative;
+  left: 37%;
+}
+#jsP {
+  position: relative;
+  left: 35%;
+}
+#postmanP {
+  position: relative;
+  left: 37%;
+}
+#gitP {
+  position: relative;
+  left: 45%;
+}
+.postmanIcon {
+  height: 65px;
+  width: 65px;
+  position: relative;
+  left: 37%;
+}
+#skillsHeading {
+  position: absolute;
+  top: 15%;
+  right: 46%;
+  color: #303030;
+}
+.img-container {
+  margin-top: 180px;
+  margin-right: 100px;
+}
+.aboutImage {
+  height: 200px;
+  width: 150px;
+  border: 5px solid white;
+}
+#aboutMe {
+  position: absolute;
+  top: 15%;
+  left: 48%;
+  color: #303030; 
+}
+#aboutPage {
+ padding-top: 40%;
+ text-align: center; 
+}
+
+#homeP {
+  font-size: 40px;
+}
+#myName {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+h2 {
+  font-size: 30px;
+}
+#indexButton {
+  border: none;
+  color: black;
+  background-color: #f7e98e;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+}
+#idQuote {
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+.projectsContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 200px;
+}
+#freeDiv{
+  height: 200px;
+  width: 200px;
+}
+#cardDiv{
+  height: 200px;
+  width: 200px;
+}
+#rankDiv{
+  height: 200px;
+  width: 200px;
+}
+/* skills */
+#htmlIcon{
+  height: 300px;
+}
+
 }
 
