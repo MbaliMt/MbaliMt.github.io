@@ -10,16 +10,12 @@
 body {
   font-family: "Poppins", serif;
   color: rgb(214, 214, 214);
+  height: 100%;
+  /* overflow: scroll;
+  -webkit-overflow-scrolling: touch; */
+
 }
-/* div,
-section,
-span,
-ul,
-li,
-a,
-header {
-  box-sizing: border-box;
-} */
+
 
 section{
   height: 1000px;
@@ -38,11 +34,18 @@ section{
 }
 #projects{
   background-color: #f0dc82;
-  overflow: scroll;
 }
-
-#contact{
+#contact {
   background-color: #996515;
+}
+#DivContact{
+/*   
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  justify-items: center; */
+  margin-top: 200px;
+
 }
 
 .container {
@@ -101,7 +104,7 @@ a {
   height: 100vh;
 }
 #home{
-  overflow: scroll;
+  
   background-color: #996515;
   height: 700px;
   display: grid;
@@ -153,7 +156,6 @@ html,body{
   height:100%;
   width:100%;
   position:relative;
-  overflow:hidden;
 }
 
 .gallery{
@@ -197,10 +199,10 @@ img{
   content:'';
   position:absolute;
   opacity:0.5;
-  /* width:250px;
-  height:70px; */
-  /* width:100px;
-  height:50px; */
+  width:250px;
+  height:70px; 
+  width:100px;
+  height:50px; 
   top:0;
   left:0;
   z-index:1;
@@ -213,10 +215,12 @@ img{
   transition:transform 0.5s;
 }
 
-/* .clipped-border{
-  width:250px;
-  height:250px;
-} */
+
+
+.clipped-border{
+  width:100px;
+  height:100px;
+}
 
 .clipped-border:nth-child(2){
   top:0;
@@ -282,7 +286,7 @@ clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 /* End About */
 .projectsContainer{
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   row-gap: 10px;
   margin-top: 200px;
 }
@@ -344,7 +348,10 @@ clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
+.clipped-border{
+  width:250px;
+  height:250px;
+}
 
 .clipped-border:nth-child(2){
   top:196px;
@@ -452,9 +459,7 @@ a .headings {
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.subContact .headings {
-  /* background-color: aqua; */
-}
+
 .socialMediaIcons {
   margin-bottom: 0%;
   padding-bottom: 0%;
@@ -580,6 +585,7 @@ h2 {
 /* skills */
 #htmlIcon{
   height: 300px;
+  padding-left: 20px;
 }
 
 }
