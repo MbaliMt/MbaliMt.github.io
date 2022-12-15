@@ -5,15 +5,17 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.788)),
-    url("https://wallup.net/wp-content/uploads/2017/11/23/430250-technology-laptop-keyboards-748x421.jpg");
+  /* box-sizing: 100%; */
 }
 
 html {
   font-size: 62.5%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+#main{
+  background-color: #996515;
+  height: 700px;
+}
 li {
   list-style: none;
 }
@@ -27,6 +29,7 @@ a {
   justify-content: space-between;
   justify-content: center;
   padding: 1rem 1.5rem;
+  height: 50px;
 }
 
 .hamburger {
@@ -56,7 +59,7 @@ a {
 .link {
   font-size: 2rem;
   font-weight: 400;
-  color: white;
+  color: black;
 }
 
 .link:hover {
@@ -100,14 +103,14 @@ h2 {
   font-family: "Alegreya SC", serif;
   font-size: 17px;
 }
-.skillsIcons .skillsHeadings {
+#skillsIcons .skillsHeadings {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   color: white;
   margin-top: 200px;
 }
 
-.skillsIcons {
+#skillsIcons {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 5px;
@@ -130,10 +133,10 @@ h2 {
   height: 200px;
   width: 200px;
 }
-/* #htmlIcon {
-  height: 210px;
-  width: 220px;
-} */
+
+#navbar{
+  position: fixed;
+}
 #navbar1 ul a {
   text-decoration: none;
   color: white;
@@ -199,14 +202,14 @@ a .headings {
 .subContact .headings {
   background-color: aqua;
 }
-.socialMediaIcons {
+#socialMediaIcons {
   margin-bottom: 0%;
   padding-bottom: 0%;
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
-.socialMediaIcons .image {
+#socialMediaIcons .image {
   border-radius: 10px;
   height: 80px;
   width: 80px;
@@ -217,8 +220,10 @@ a .headings {
   margin-bottom: auto;
   font-family: Alegre;
 }
-
-.AboutMeSection {
+#about{
+  background-color: #f0dc82;
+}
+#AboutMeSection {
   display: grid;
   padding: 2rem;
   grid-template-columns: 350px 1fr;
@@ -261,7 +266,7 @@ a .headings {
   #myImage {
     width: 100%;
   }
-  .main {
+  #main {
     text-align: center;
   }
   .navbar {
@@ -367,12 +372,12 @@ a .headings {
     margin-top: 50px;
   }
   /*end skills*/
-  .skillsIcons {
+  #skillsIcons {
     margin-left: 5%;
   }
 }
 @media (max-width: 650px) {
-  .AboutMeSection {
+  #AboutMeSection {
     display: block;
     font-size: 90%;
   }
@@ -388,7 +393,7 @@ a .headings {
   .skillsIcons {
     margin-left: 5%;
   }
-  .skillsIcons {
+  #skillsIcons {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5px;
@@ -419,7 +424,7 @@ a .headings {
     font-size: 17px;
   }
   /*Skills*/
-  .skillsIcons {
+  #skillsIcons {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5px;
@@ -443,14 +448,14 @@ a .headings {
   .subContact .headings {
     background-color: aqua;
   }
-  .socialMediaIcons {
+  #socialMediaIcons {
     margin-bottom: 0%;
     padding-bottom: 0%;
     display: flex;
     justify-content: center;
     margin-top: 30px;
   }
-  .socialMediaIcons .image {
+  #socialMediaIcons .image {
     height: 50px;
     width: 50px;
     margin: 7px;
@@ -462,10 +467,10 @@ a .headings {
   #contact {
     font-size: 30px;
   }
-  .AboutMeSection {
+  #AboutMeSection {
     margin-top: 20px;
   }
-  .skillsIcons {
+  #skillsIcons {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5px;

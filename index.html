@@ -13,19 +13,19 @@
       <nav class="navbar">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="index.html" class="link">Home</a>
+            <a href="#main" class="link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="./Html_files/AboutMe.html" class="link">About Me</a>
+            <a href="#about" class="link">About Me</a>
           </li>
           <li class="nav-item">
-            <a href="./Html_files/Skills.html" class="link">Skills</a>
+            <a href="#skills" class="link">Skills</a>
           </li>
           <li class="nav-item">
             <a href="./Html_files/Projects.html" class="link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="./Html_files/Contact.html" class="link">Contact</a>
+            <a href="#contact" class="link">Contact</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -35,7 +35,7 @@
         </div>
       </nav>
     </header>
-    <main class="main"></main>
+    <section id="main">
     <div class="homeText">
       <div class="infoText">
         <p id="hi">Hello, I'm</p>
@@ -44,7 +44,74 @@
       </div>
       <a href="./Html_files/AboutMe.html" id="indexButton">MORE ABOUT ME</a>
     </div>
-    </main>  
+  </section>  
+  <section id="about">
+    <div id="AboutMeSection">
+      <img src="../Images/myImage.jpg" alt="..." height="" width="" id="myImg" />
+      <p class="aboutMeP">I am currently a learner at Umuzi doing Web development and I have so far gained
+      skills in HTML, JavaScript, Css as well as python.
+      I completed a higher certificate in Software Development and have
+      experience working as a Technician.
+      My interests are coding, listening to soul music and dancing.
+      </br>
+      </br>
+      <br>
+      <a id="CV" href="../Pdf_files/M Mtimkhulu CV.pdf" download="Mbali Mthimkhulu" target="_blank">MY RESUME</a></p>
+    </div>
+  </section>
+  <section id="skills">
+    <section id="skills">
+      <h1 id="skillsHeading"></h1>
+    
+    <div class = "gallery">
+      <div class="clipped-border">
+        <img src="./images/html5.png" id="clipped">
+        <p>HTML</p>
+      </div>
+      <div class="clipped-border">
+        <img src="./images/css1.png" id="clipped">
+      </div>
+      <div class="clipped-border">
+        <img src="./images/download.jpg" id="clipped">
+    </div>
+      <div class="clipped-border">
+        <img src="./images/js.png" id="clipped">
+      </div>
+        
+        <div class="clipped-border">
+        <img src="./images/postman.png" id="clipped">
+      </div>
+    </div>
+    </section>
+  </section>
+      <section id="contact">
+        <div class="contactDiv">
+          <h2 id="contact">Contact</h2>
+        <p class="headings">EMAIL</br> </p>
+        <p id="info">mz.mthimkhulu@gmail.com</br></p>
+        <br>
+        <p class="headings">PHONE</br></p>
+        <p id="info">+27 762935937</br></p>
+        <br>
+        <p class="headings">ADDRESS</br></p>
+        <p id="info">2754 Xorile Street</br> Zola South</br> 1868</p>
+      </div>
+  
+      <div class="socialMediaIcons">
+          <a href="https://www.facebook.com/mbali.mthimkhulu.583">
+            <img src="../Images/facebookP.png" alt="facebookP"  class="image">
+          </a>
+          <a href="https://twitter.com/MbaliMthimkhulu">
+            <img src="../Images/twitterP.png" alt="twitterIcon"  class="image">
+          </a>
+          <a href="https://www.linkedin.com/in/mbali-mtimkulu-a8339612b/">
+            <img src="../Images/LinkedInIP.png" alt="LinkedInIcon"  class="image">
+          </a>
+          <a href="https://github.com/MbaliMt">
+            <img src="../Images/gitP.png" alt="gitIcon"  class="image">
+          </a>
+        </div>
+      </section>
   </body>
 
   <script src="./Js_file/myscript.js"></script>
