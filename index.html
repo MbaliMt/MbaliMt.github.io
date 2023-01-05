@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./css/memory.css" />
+  </head>
+  <body>
+  <div class="main">
+    <form class="grid-selector" >
+      <select id="dropdown_result" name="selection">
+        <option value="0" selected="selected">
+          Choose grid number
+        </option>
+        <option value="4">2X2</option>
+        <option value="6">2X3</option>
+        <option value="12">3X4</option>
+      </select>
+      <button type="submit" id="button" name="button" >Set</button>
+    </form>
+    <section class="container">
+      <div class="memory-card" id="block_1" data-framework="colour-eye">
+        <img class="front-img" src="images/art4.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_2"  data-framework="colour-eye">
+        <img class="front-img" src="images/art4.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_3" data-framework="the-eye">
+        <img class="front-img" src="images/art2.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_4" data-framework="the-eye">
+        <img class="front-img" src="images/art2.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_5"  data-framework="human">
+        <img class="front-img" src="images/art3.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_6" data-framework="human">
+        <img class="front-img" src="images/art3.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_7" data-framework="india">
+        <img class="front-img" src="images/art6.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_8" data-framework="india">
+        <img class="front-img" src="images/art6.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+     <div class="memory-card" id="block_9" data-framework="big-five">
+        <img class="front-img" src="images/art7.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_10"data-framework="big-five">
+        <img class="front-img" src="images/art7.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_11"data-framework="forest">
+        <img class="front-img" src="images/art9.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+      <div class="memory-card" id="block_12" data-framework="forest">
+        <img class="front-img" src="images/art9.jpg" />
+        <img class="back-img" src="images/justArt.jpg" />
+      </div>
+    </div>
+    <script src="./src/memory.js" defer></script>
+  </body>
+</html>
