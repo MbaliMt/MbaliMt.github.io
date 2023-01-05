@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #907963;
+}
+
+.container {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  margin-top: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg) perspective(1000px);
+}
+button{
+  background-color: #fbeec1;
+  width: 50px;
+}
+
+.front-img,
+.back-img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  border-radius: 5px;
+  background: #fbeec1;
+  backface-visibility: hidden;
+}
+
+.front-img {
+  transform: rotateY(180deg);
+}
+.memory-card {
+  display: none;
+}
+
+.four {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  margin-top: 50px;
+}
+
+.four > .memory-card {
+  width: 230px;
+  height: 250px;
+}
+
+.six {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.six > .memory-card {
+  width: 200px;
+  height: 250px;
+  justify-content: center;
+}
+
+.twelve {
+  margin-top: 20px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.twelve > .memory-card {
+  width: 150px;
+  height: 200px;
+}
