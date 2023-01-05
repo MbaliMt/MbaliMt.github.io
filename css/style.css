@@ -5,13 +5,15 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.788)),
-    url("https://wallup.net/wp-content/uploads/2017/11/23/430250-technology-laptop-keyboards-748x421.jpg");
 }
 
 html {
   font-size: 62.5%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section{
+  height: 100vh;
+  /* width: 100vh; */
 }
 
 li {
@@ -27,6 +29,7 @@ a {
   justify-content: space-between;
   justify-content: center;
   padding: 1rem 1.5rem;
+  position: fixed;
 }
 
 .hamburger {
@@ -56,12 +59,12 @@ a {
 .link {
   font-size: 2rem;
   font-weight: 400;
-  color: white;
+  color: black;
 }
 
 .link:hover {
   text-decoration: underline;
-  text-decoration-color: #a48111;
+  text-decoration-color: black;
   text-decoration-thickness: 4px;
   text-underline-position: under;
 }
@@ -100,14 +103,14 @@ h2 {
   font-family: "Alegreya SC", serif;
   font-size: 17px;
 }
-.skillsIcons .skillsHeadings {
+#skillsIcons .skillsHeadings {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   color: white;
   margin-top: 200px;
 }
 
-.skillsIcons {
+#skillsIcons {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 5px;
@@ -218,7 +221,7 @@ a .headings {
   font-family: Alegre;
 }
 
-.AboutMeSection {
+#home {
   display: grid;
   padding: 2rem;
   grid-template-columns: 350px 1fr;
@@ -230,9 +233,74 @@ a .headings {
   color: white;
   padding-top: 10rem;
   font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #996515;
+
 }
-.aboutMeP {
-  font-size: 2.6rem;
+#skills{
+  background-color: #996515;
+}
+#contacts{
+  background-color: #996515;
+}
+/* About */
+#about {
+  background-color: #f0dc82;
+}
+.aboutContainer{
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+.aboutImage {
+  height: 200px;
+  width: 150px;
+  border: 5px solid white;
+}
+.aboutMe {
+  color: #303030;
+  font-size: 2rem;
+}
+#aboutPage {
+ padding-top: 20%;
+ text-align: center; 
+}
+#circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8 {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+/* End About */
+.projectsContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* row-gap: 10px; */
+  margin-bottom: 2000px;
+  justify-content: center;
+}
+#freeDiv{
+  height: 200px;
+  width: 200px;
+}
+#cardDiv{
+  height: 200px;
+  width: 200px;
+}
+#rankDiv{
+  height: 200px;
+  width: 200px;
+}
+#free{
+  height: 200px;
+  width: 200px;
+}
+#card{
+  height: 200px;
+  width: 200px;
+}
+#rank{
+  height: 200px;
+  width: 200px;
 }
 #myImg {
   max-width: 100%;
@@ -250,6 +318,9 @@ a .headings {
   margin-top: 20px;
   text-decoration: none;
 }
+#projects{
+  background-color: #f0dc82;
+}
 #projectsId {
   font-size: 50px;
   font-family: "Times New Roman", Times, serif;
@@ -257,6 +328,7 @@ a .headings {
   text-align: center;
   margin-top: 100px;
 }
+
 @media (max-width: 768px) {
   #myImage {
     width: 100%;
@@ -363,16 +435,16 @@ a .headings {
     margin-left: 20%;
   }
   /*Skills*/
-  .skillsIcons .skillsHeadings {
+  #skillsIcons .skillsHeadings {
     margin-top: 50px;
   }
   /*end skills*/
-  .skillsIcons {
+  #skillsIcons {
     margin-left: 5%;
   }
 }
 @media (max-width: 650px) {
-  .AboutMeSection {
+  #home {
     display: block;
     font-size: 90%;
   }
@@ -385,10 +457,10 @@ a .headings {
     grid: 100%;
     max-width: 100%;
   }
-  .skillsIcons {
+  #skillsIcons {
     margin-left: 5%;
   }
-  .skillsIcons {
+  #skillsIcons {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5px;
@@ -419,7 +491,7 @@ a .headings {
     font-size: 17px;
   }
   /*Skills*/
-  .skillsIcons {
+  #skillsIcons {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5px;
@@ -462,10 +534,10 @@ a .headings {
   #contact {
     font-size: 30px;
   }
-  .AboutMeSection {
+  #home {
     margin-top: 20px;
   }
-  .skillsIcons {
+  #skillsIcons {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5px;

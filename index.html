@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Css/myStyle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Mbali Mtimkulu</title>
   </head>
 
@@ -13,19 +13,19 @@
       <nav class="navbar">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="index.html" class="link">Home</a>
+            <a href="#home" class="link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="./Html_files/AboutMe.html" class="link">About Me</a>
+            <a href="#about" class="link">About Me</a>
           </li>
           <li class="nav-item">
-            <a href="./Html_files/Skills.html" class="link">Skills</a>
+            <a href="#skills" class="link">Skills</a>
           </li>
           <li class="nav-item">
-            <a href="./Html_files/Projects.html" class="link">Projects</a>
+            <a href="#projects" class="link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="./Html_files/Contact.html" class="link">Contact</a>
+            <a href="#contacts" class="link">Contact</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -35,17 +35,119 @@
         </div>
       </nav>
     </header>
-    <main class="main"></main>
-    <div class="homeText">
-      <div class="infoText">
-        <p id="hi">Hello, I'm</p>
-        <h1 id="name">Mbali Mtimkulu</h1>
-        <h2>Web Developer</h2>
+    <section id="home">
+      <img src="../images/myImage.jpg" alt="..." height="" width="" id="myImg" />
+      <p class="aboutMeP">
+      <span id="hi">Hello, I'm</span> 
+      </br>
+      <span id="name"> Mbali Mtimkulu</span>
+    </br>
+      <span>Web Developer</span> 
+      </br>
+      <br>
+      <a id="CV" href="./pdfFIles/Mbali Mtimkhulu CV (1).pdf" download="Mbali Mthimkhulu" target="_blank">MY RESUME</a></p>
+      </section>
+      <section id="about">
+        <!-- <h1 id="aboutMe">About Me</h1> -->
+        <div class="aboutContainer">
+  <div id="circleBox1">
+    <div><img id="circle1" src="./images/music1.png"></div>
+    <div><img id="circle2" src="./images/dance3.png"></div>
+    <div><img id="circle3" src="./images/girlcode.png"></div>
+    <div><img id="circle4" src="./images/code.png"></div>
+  </div>
+  <div id="aboutPage">
+      <p class="aboutMe">I am currently a learner at Umuzi doing Web development</p> 
+      <p class="aboutMe">and I have so far gained skills in HTML,</p>
+       <p class="aboutMe">JavaScript, Css as well as working wth API's using Postman.</p>
+      <p class="aboutMe">I completed a higher certificate in Software Development</p> 
+      <p class="aboutMe">and have experience working as a Technician.</p>
+      <p class="aboutMe">My interests are coding, listening to soul music</p>
+       <p class="aboutMe">and dancing.</p>
+  </div>
+  <div id="circleBox2">
+    <div><img id="circle5" src="./images/code1.png"></div>
+    <div><img id="circle6" src="./images/guycode.png"></div>
+    <div><img id="circle7" src="./images/dance1.png"></div>
+    <div><img id="circle8" src="./images/music2.png"></div>
+  </div>
+</div>
+    </section>
+
+          <section id="skills">
+        <div id="skillsIcons">
+          <div class="iconDiv">
+              <p class="skillsHeadings">HTML</p> 
+          <img id="htmlIcon" class="skillsImage" src="../images/htmlIcon.png"/>
+          </div>
+  
+          <div class="iconDiv">
+          <p class="skillsHeadings">CSS</p>    
+          <img class="skillsImage" src="../images/cssIcon.png"/>
+          </div>
+  
+          <div class="iconDiv">
+          <p class="skillsHeadings">PYTHON</p> 
+          <img class="skillsImage" src="../images/pythonIcon.png"/>
+         </div>
+          <div class="iconDiv">
+              <p class="skillsHeadings">JSCRIPT</p> 
+              <img  class="skillsImage" src="../images/jsIcon.png"/>
+          </div>
+          <div class="iconDiv">
+              <p class="skillsHeadings">GIT</p> 
+              <img class="skillsImage" src="../images/gitIcon.png"/>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <!-- <h1 id="projectsHeading">Projects</h1> -->
+        <div class="container">
+        
+        <div class="projectsContainer">
+        <div id="freeDiv">
+        <a href="https://www.freecodecamp.org/fcc1e5b6f83-d79f-4b8d-8a70-14175b290e87" target="_blank"><img src="./images/freecodecamp-icon-filled.png" id="free"></a>
       </div>
-      <a href="./Html_files/AboutMe.html" id="indexButton">MORE ABOUT ME</a>
+      <div id="cardDiv">
+      <a href="https://mbakz.github.io/" target="_blank"><img src="./images/memory-card.PNG" id="card"></a>
     </div>
-    </main>  
+    <div id="rankDiv">
+    <a href="https://www.hackerrank.com/mz_mthimkhulu" target="_blank"><img src="./images/HackerRank_Icon-1000px.png" id="rank"></a>
+  </div>
+  </div>
+  </div>
+      </section>
+  
+      <section id="contacts">
+        <div class="contactDiv">
+          <h2 id="contact">Contact</h2>
+        <br>
+        <p class="headings">PHONE</br></p>
+        <p id="info">+27 762935937</br></p>
+        <br>
+        <p class="headings">ADDRESS</br></p>
+        <p id="info">2754 Xorile Street</br> Zola South</br> 1868</p>
+      </div>
+  
+      <div class="socialMediaIcons">
+          <a href="https://www.facebook.com/mbali.mthimkhulu.583">
+            <img src="../images/facebookP.png" alt="facebookP"  class="image" target="_blank">
+          </a>
+          <a href="https://twitter.com/MbaliMthimkhulu">
+            <img src="../images/twitterP.png" alt="twitterIcon"  class="image" target="_blank">
+          </a>
+          <a href="mailto:mz.mthimkhulu@gmail.com" target="_blank">
+          <img src="./images/email.png" alt="emailIcon"  class="image">
+        </a>
+          <a href="https://www.linkedin.com/in/mbali-mtimkulu-a8339612b/">
+            <img src="../images/LinkedInIP.png" alt="LinkedInIcon"  class="image" target="_blank">
+          </a>
+          <a href="https://github.com/MbaliMt">
+            <img src="../images/gitP.png" alt="gitIcon"  class="image" target="_blank">
+          </a>
+      </div>
+      </section>
   </body>
 
-  <script src="./Js_file/myscript.js"></script>
+  <script src="./src/script.js  "></script>
 </html>
