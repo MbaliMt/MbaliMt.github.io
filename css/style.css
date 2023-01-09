@@ -124,7 +124,7 @@ a {
   display: grid;
   grid-template-columns: repeat(6, 160px);
   grid-gap: 5px;
-  margin-left: 15%;
+  justify-content: center;
 }
 .iconDiv {
   /* max-width: 120px; */
@@ -139,11 +139,17 @@ a {
 .skillsHeadings {
   text-align: center;
 }
-.skillsH1{
+#skillsH1{
   text-align: center;
   color: white;
   font-size: 30px;
   margin-top: 2%;
+  margin-bottom: 0px;
+}
+.headings{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 2% !important;
   margin-bottom: 0px;
 }
 .skillsImage {
@@ -195,13 +201,15 @@ a {
   color: white;
   display: block;
   text-align: center;
-  margin-top: 100px;
 }
 
 .contacts {
   text-align: left;
   text-align: center;
   padding-left: 20px;
+}
+#contact {
+  color: white;
 }
 
 .contactDiv .headings {
@@ -255,7 +263,7 @@ a .headings {
 .aboutMeP {
   font-size: 2.6rem;
 }
-.aboutMeH2{
+#aboutMeH2{
   text-align: center;
   color: #303030;
   font-size: 30px;
@@ -645,7 +653,7 @@ a .headings {
     margin-bottom: auto;
   }
   #contact {
-    font-size: 30px;
+    color: white;
   }
   .AboutMeSection {
     margin-top: 20px;
