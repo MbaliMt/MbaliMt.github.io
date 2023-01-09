@@ -384,6 +384,7 @@ a .headings {
   grid-template-columns: repeat(3, 250px);
   margin-top: 15%;
   justify-content: center;
+  grid-gap: 10px;
 }
 @media (max-width: 768px) {
   #myImage {
@@ -500,6 +501,7 @@ a .headings {
   /*end skills*/
   .skillsIcons {
     margin-top: 0px;
+    grid-template-columns: repeat(3, 160px);
   }
   .skillsImage {
     height: 150px;
@@ -509,7 +511,7 @@ a .headings {
     margin-top: 0px;
   }
   .projectsContainer{
-    grid-template-rows: 200px 200px 200px;
+    grid-gap: 5px;
   }
 
   .aboutContainer{
@@ -618,6 +620,14 @@ a .headings {
     padding-top: 0px;
     grid-template-rows: 200px 200px 200px;
   }
+  .projectsContainer{
+    grid-template-columns: repeat(1, 200px);
+    grid-gap: 10px;
+  }
+  #free, #card, #rank{
+    height: 160px;
+    /* width: 170px; */
+  }
   #circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8 {
     display: none;
   }
@@ -690,7 +700,12 @@ a .headings {
     padding-top: 10px;
   }
   .projectsContainer{
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: repeat(1, 200px);
+    grid-gap: 10px;
+  }
+  #free, #card, #rank{
+    height: 150px;
+    width: 170px;
   }
   .aboutContainer{
     grid-template-columns: repeat(1, 1fr);
