@@ -7,7 +7,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 #home, #skills, #contacts{
   background-color: #996515;
@@ -22,6 +22,7 @@ li {
 
 a {
   text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .navbar {
@@ -59,7 +60,7 @@ a {
 
 .link {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight:bolder;
   color: #303030;;
 }
 
@@ -76,13 +77,6 @@ a {
   color: white;
   margin-top: 200px;
 }
-/* #homeP {
-  margin-left: 110px;
-  font-size: 3rem;
-} */
-/* #homeName{
-  margin-left: 80px;
-} */
 
 #homeP {
   font-family: "Segoe UI", Arial, sans-serif;
@@ -112,11 +106,12 @@ a {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  font-family: "Alegreya SC", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 17px;
 }
 .skillsIcons .skillsHeadings {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   font-size: 30px;
   color: white;
   margin-top: 200px;
@@ -148,6 +143,7 @@ a {
   margin-bottom: 0px;
 }
 .headings{
+  font-weight: bold;
   text-align: center;
   font-size: 30px;
   margin-top: 2% !important;
@@ -157,15 +153,10 @@ a {
   height: 150px;
   width: 200px;
 }
-/* #htmlIcon {
-  height: 210px;
-  width: 220px;
-} */
+
 #navbar1 ul a {
   text-decoration: none;
   color: #303030;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -193,7 +184,7 @@ a {
   justify-content: center;
 }
 .contactDiv #info {
-  font-family: "Brygada 1918", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 30px;
   text-align: center;
 }
@@ -214,9 +205,9 @@ a {
 }
 
 .contactDiv .headings {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 25px;
-  color: blue;
+  color: #1434A4	;
 }
 a .headings {
   padding-bottom: 20px;
@@ -224,7 +215,7 @@ a .headings {
 
 .subAct {
   font-size: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 .subContact .headings {
   background-color: aqua;
@@ -275,6 +266,8 @@ a .headings {
   border-radius: 10px;
 }
 #CV {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   border-radius: 10px;
   background: #F7E98E;
   font-size: 12px;
@@ -289,7 +282,7 @@ a .headings {
 }
 #projectsId {
   font-size: 50px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Nunito Sans", sans-serif;
   color: white;
   text-align: center;
   margin-top: 100px;
@@ -467,12 +460,12 @@ a .headings {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    font-family: "Alegreya SC", serif;
     font-size: 17px;
   }
   #cvDiv {
     margin-top: 200px;
     margin-right: 500px;
+    color: grey;
   }
   #buttonCv {
     padding: 15px 32px;
