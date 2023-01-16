@@ -223,8 +223,9 @@ a .headings {
 .socialMediaIcons {
   margin-bottom: 0%;
   padding-bottom: 0%;
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns: repeat(5, 90px);
   margin-top: 40px;
 }
 .socialMediaIcons .image {
@@ -511,7 +512,7 @@ a .headings {
 
   .aboutContainer{
     padding-top: 0px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 2px 200px 2px !important;
   }
   #circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8 {
     display: none;
@@ -556,10 +557,13 @@ a .headings {
   }
   .aboutContainer{
     padding-top: 0px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 2px 200px 2px !important;
   }
   #circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8 {
     display: none;
+  }
+  .socialMediaIcons{
+    grid-template-columns: repeat(3, 90px);
   }
 }
 
@@ -613,7 +617,7 @@ a .headings {
   }
   .aboutContainer{
     padding-top: 0px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 2px 200px 2px;
   }
   .projectsContainer{
     grid-template-columns: repeat(1, 200px);
@@ -621,10 +625,23 @@ a .headings {
   }
   #free, #card, #rank{
     height: 160px;
-    /* width: 170px; */
   }
   #circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8 {
     display: none;
+  }
+  .socialMediaIcons {
+    grid-template-columns: repeat(5, 70px);;
+  }
+  .socialMediaIcons .image {
+    height: 60px;
+    width: 60px;
+    grid-template-columns: repeat(1, 20px);
+  }
+  .socialMediaIcons a {
+    height: 50px;
+    width: 50px;
+    grid-template-columns: repeat(1, 20px);
+    padding-right: 0px;
   }
 }
 @media (max-width: 375px) {
@@ -643,8 +660,6 @@ a .headings {
   .socialMediaIcons {
     margin-bottom: 0%;
     padding-bottom: 0%;
-    display: flex;
-    justify-content: center;
     margin-top: 30px;
   }
   .socialMediaIcons .image {
@@ -707,5 +722,8 @@ a .headings {
   }
   #circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8 {
     display: none;
+  }
+  .socialMediaIcons {
+    grid-template-columns: repeat(5, 53px);;
   }
 }
