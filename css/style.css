@@ -509,10 +509,11 @@ a .headings {
   .projectsContainer{
     grid-gap: 5px;
   }
-
+  #about{
+    margin-top: 0px;
+  }
   .aboutContainer{
-    padding-top: 0px;
-    grid-template-columns: 2px 200px 2px !important;
+    grid-template-columns: 5% 90% 5% !important;
   }
   #circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8 {
     display: none;
